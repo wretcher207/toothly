@@ -1,0 +1,65 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+  ],
+  presets: [require("nativewind/preset")],
+  theme: {
+    extend: {
+      colors: {
+        petrol: {
+          DEFAULT: "#0E2A30",
+          deep: "#072024",
+          soft: "#1F4750",
+        },
+        sand: "#F4E8D5",
+        bone: "#FBF5E9",
+        paper: "#FFFFFF",
+        blush: "#F8DCCC",
+        sage: "#DCE9DC",
+        sky: "#D8E2E8",
+        sunshine: "#F5DDA5",
+        clay: "#E8C9B5",
+        coral: {
+          DEFAULT: "#E8744F",
+          deep: "#C75A38",
+        },
+        mint: "#7CC2A7",
+        amber: "#D69B3C",
+        plum: "#7A4A5C",
+        ink: {
+          0: "#FFFFFF",
+          50: "#FAF6EE",
+          100: "#EFE7D6",
+          200: "#DCD0BA",
+          300: "#BCAE96",
+          400: "#8E826A",
+          500: "#6A5F4C",
+          600: "#4A4135",
+          700: "#312A22",
+          800: "#1C1812",
+          900: "#0E0C08",
+        },
+        success: "#3A8A6A",
+        warning: "#D69B3C",
+        danger: "#B94734",
+        info: "#4F7B95",
+      },
+      fontFamily: {
+        sans: ["Inter_400Regular"],
+        medium: ["Inter_500Medium"],
+        semibold: ["Inter_600SemiBold"],
+        bold: ["Inter_700Bold"],
+      },
+      borderRadius: {
+        sm: "6px",
+        md: "12px",
+        lg: "16px",
+        xl: "24px",
+        "2xl": "32px",
+      },
+    },
+  },
+  plugins: [],
+};

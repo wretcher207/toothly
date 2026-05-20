@@ -1,51 +1,55 @@
 # Toothly — Session Handoff
 
 **Last updated:** 2026-05-20
+**Repo:** local git, two commits on `main`. Push to GitHub via `scripts/push-to-github.bat`.
 
 ## Where we are
 
-Phase 0 → Phase 3 jump: scaffolded the Expo app and built a working dashboard skeleton in the same session. Figma deferred (Starter rate limit + David's preference to design in code first).
+Scaffold + design system v1 in place. Dashboard and Reference screens mocked with the redesigned warm palette. No backend yet.
 
 ## Decisions locked
 
 - **Cert target:** DANB COA (OA + ICE), 215q / 165min bundled, $450 fee
 - **Positioning:** lead with COA prep, expand into career companion for retention
-- **Platforms:** native iOS + Android, single codebase via Expo
-- **Stack:** Expo SDK 54, React Native 0.81, TypeScript, NativeWind v4, Tailwind 3, react-native-svg, Inter via @expo-google-fonts, Expo Router
-- **Backend (planned, not yet built):** Supabase + RevenueCat + FSRS + PostHog
+- **Platforms:** native iOS + Android, single Expo codebase
+- **Stack:** Expo SDK 54, RN 0.81, TypeScript, NativeWind v4, Tailwind 3, react-native-svg, Inter via @expo-google-fonts, Expo Router
+- **Backend (planned):** Supabase + RevenueCat + FSRS + PostHog
 - **Name:** Toothly
-- **Brand palette (provisional, David to review):** petrol #123339 + cream #F1EFE3 + coral #F68A63 + mint #9FD7C4 + ink neutrals
-- **Bundle ID:** com.deadpixel.toothly
+- **Bundle ID:** `com.deadpixel.toothly`
+- **Brand palette v2 (after David's "warmer, more color" pass):**
+  - Petrol `#0E2A30` (deepened from `#123339`)
+  - Sand `#F4E8D5` background (was cool cream)
+  - Coral `#E8744F` primary accent (deepened from `#F68A63`)
+  - Mint `#7CC2A7`, amber `#D69B3C`, plum `#7A4A5C`
+  - Tinted surfaces: bone, blush, sage, sky, sunshine, clay — used as the default Card system, not white-on-cream
+- **Domain color coding:** every major content domain has a consistent surface+accent pair (`domainColors` in `lib/tokens.ts`)
+
+## Repo state
+
+- Local git initialized on `main`
+- Two commits: initial scaffold + push script
+- **Not yet on GitHub** — gh auth was expired. David runs `scripts/push-to-github.bat` to re-auth and push.
 
 ## What lives where
 
 ```
 toothly/
-├── CLAUDE.md           project context for future Claude Code sessions
+├── CLAUDE.md           project context for future sessions
 ├── HANDOFF.md          this file
-├── scripts/            double-click .bat files for dev
+├── README.md           public-facing intro
+├── .gitignore
+├── scripts/
 │   ├── dev.bat            full Expo menu
-│   ├── dev-web.bat        web browser preview (fastest)
-│   ├── dev-tunnel.bat     tunnel mode for phone via Expo Go on any network
+│   ├── dev-web.bat        web preview (fastest)
+│   ├── dev-tunnel.bat     phone via Expo Go on any network
 │   ├── install.bat        npm install
-│   └── lint.bat           npm run lint
+│   ├── lint.bat           npm run lint
+│   └── push-to-github.bat one-time GH auth + repo create + push
 └── app/                Expo project
-    ├── app/            Expo Router routes
-    │   ├── _layout.tsx     root: theme, font loading, global.css
-    │   └── (tabs)/
-    │       ├── _layout.tsx     bottom-tab nav
-    │       ├── index.tsx       Study dashboard
-    │       └── explore.tsx     Reference browser
-    ├── components/
-    │   └── ui/
-    │       ├── Button.tsx
-    │       ├── Card.tsx
-    │       ├── StatCard.tsx
-    │       └── ReadinessRing.tsx
-    ├── lib/
-    │   └── tokens.ts       design tokens (TS source of truth)
-    ├── tailwind.config.js  NativeWind theme mirroring tokens.ts
-    ├── global.css          tailwind directives
+    ├── app/                Expo Router routes (Study + Reference tabs)
+    ├── components/ui/      Button, Card, StatCard, ReadinessRing
+    ├── lib/tokens.ts       design tokens source of truth
+    ├── tailwind.config.js  NativeWind theme mirroring tokens
     ├── babel.config.js     NativeWind v4 preset
     ├── metro.config.js     withNativeWind
     └── nativewind-env.d.ts
@@ -53,40 +57,49 @@ toothly/
 
 ## How to run it
 
-Double-click `scripts/dev-web.bat` — opens Expo, press `w` for web preview in your browser. Easiest for visual iteration on desktop.
+Double-click **`scripts/dev-web.bat`**. When the menu appears, press **`w`** for browser preview.
 
-For phone: double-click `scripts/dev-tunnel.bat`, install **Expo Go** from App Store / Play Store, scan the QR code.
+For phone preview: **`scripts/dev-tunnel.bat`**, install Expo Go, scan the QR.
+
+## Push to GitHub
+
+Double-click **`scripts/push-to-github.bat`**. It will:
+1. Log into GitHub (browser opens for OAuth)
+2. Create `toothly` as a private repo
+3. Push `main`
+
+If repo already exists it tries to set the remote and push instead.
 
 ## Decisions pending
 
-- Figma upgrade decision (David chose code-first for now, Pro later if SME needs heavy Figma collab)
-- Brand direction review (David opening Figma file to evaluate)
-- Pricing model lock ($9.99/mo + $79/yr working assumption)
+- David to confirm v2 palette direction after viewing the redesigned dashboard
+- Pricing model lock ($9.99/mo + $79/yr is the working assumption)
 - Free tier scope
 - First 200 seed questions (SME friend authors)
 - Logo mark (currently wordmark only)
+- SME friend's contact preference (Figma comments vs. another channel)
 
-## What's still skin-deep
+## Still hardcoded / fake
 
-- **Data is hardcoded** in the dashboard and reference (mock domains, mock progress). Real data needs Supabase + question schema.
-- **No auth, no paywall, no question-answer flow yet.** Just the navigation shell and visual direction.
-- **Font weight rendering on RN** may need work. Inter is loaded but Tailwind's `font-semibold` etc. apply CSS font-weight; we may need to map weights to Inter family names explicitly. Test on device to confirm.
+- Dashboard data (streak, accuracy, domain progress, etc.) is all mock
+- No auth, no paywall, no real question flow
+- No content yet (taxonomy + 200 seed questions are next)
 
 ## Next session should
 
-1. Boot the app on David's phone via Expo Go, confirm the dashboard renders cleanly
-2. Build the question-answer flow: a `/study/session` route with one-question-at-a-time UI, answer reveal, explanation card, next button
-3. Set up Supabase project, schema for questions/domains/users/progress
-4. Define content taxonomy from DANB OA + ICE exam outline PDFs (request from danb.org)
+1. Confirm the v2 brand direction is good or get the next round of redirects
+2. Build the question-answer flow: `/study/session` route with one-question UI, answer reveal, explanation card, next button
+3. Set up Supabase project + schema (questions, domains, users, progress for FSRS, mock_exams, attempts)
+4. Pull DANB OA + ICE exam outline PDFs to drive content taxonomy
 5. Wire RevenueCat sandbox so paywall structure is in place
 
 ## Open tasks
 
-See task system. #4 (design system) and #6 (scaffold) currently in_progress.
+See task system. #4 (design system) and #11 (Supabase) are next-up.
 
 ## Notes
 
-- Expo SDK 54 + Reanimated 4 + NativeWind 4: standard setup applied, no Windows-specific gotchas hit yet
-- `react-native-svg` added for ReadinessRing
-- Default Expo template's `(tabs)/explore.tsx` was replaced with Reference; original was a starter walkthrough
-- App's CLAUDE.md (auto-generated by Expo) says "Expo HAS CHANGED. Read v54 docs before writing code." Heeded — fetched current NativeWind v4 setup docs before configuring.
+- Expo template at scaffold time used SDK 54 + Reanimated 4 + NativeWind 4. Standard setup applied per the official docs.
+- `app/AGENTS.md` (auto-generated by Expo) says "Expo HAS CHANGED. Read v54 docs before writing code." Honored.
+- Inter font weights load but NativeWind's `font-semibold` etc apply CSS `fontWeight` only; if device rendering doesn't pick the right Inter file, add a Text wrapper that maps weight to font family name.
+- `app/.git` from `create-expo-app` was removed so the repo is a single flat unit, not embedded.

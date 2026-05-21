@@ -1,31 +1,47 @@
-import { ScrollView, Text, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
-const sections = [
-  { title: "Instruments",        sub: "Bracket placement, ligation, banding, debonding",   count: 48, surface: "#F8DCCC", accent: "#C75A38" },
-  { title: "Wires",              sub: "NiTi, stainless steel, TMA · sizes and indications", count: 24, surface: "#DCE9DC", accent: "#3A8A6A" },
-  { title: "Brackets",           sub: "MBT, Roth, Damon prescriptions and torque charts",   count: 18, surface: "#D8E2E8", accent: "#4F7B95" },
-  { title: "Procedures",         sub: "Step-by-step checklists from bonding to debonding",  count: 12, surface: "#F5DDA5", accent: "#D69B3C" },
-  { title: "Patient Scripts",    sub: "Broken bracket, lost retainer, hygiene · EN / ES",   count: 22, surface: "#E8C9B5", accent: "#7A4A5C" },
-  { title: "Infection Control",  sub: "PPE, sterilization, OSHA, CDC guidelines",           count: 16, surface: "#F8DCCC", accent: "#C75A38" },
-];
+import { router } from "expo-router";
+import { Button } from "@/components/ui/Button";
+import { Card } from "@/components/ui/Card";
+import { screen } from "@/lib/layout";
+import { colors, shadows } from "@/lib/tokens";
+import { referenceSections } from "@/lib/mock-data";
 
 export default function Reference() {
   return (
-    <SafeAreaView className="flex-1 bg-sand">
-      <ScrollView contentContainerClassName="px-5 pb-12">
-        <View className="mt-2 mb-6">
-          <Text className="text-petrol text-3xl font-bold">Reference</Text>
-          <Text className="text-ink-500 text-sm mt-1">
-            Chairside lookup. Tap any section.
-          </Text>
+    <SafeAreaView className="flex-1 bg-paper">
+      <ScrollView contentContainerStyle={screen.content} contentContainerClassName="px-5 pt-2 pb-12">
+        <View className="mb-7 flex-row items-center justify-between">
+          <View>
+            <Text className="text-ink-900 text-2xl font-tight-bold">Reference</Text>
+            <Text className="text-ink-500 text-[10px] font-mono uppercase tracking-wider mt-1">
+              Chairside lookup / quick read
+            </Text>
+          </View>
+          <View className="h-10 w-10 items-center justify-center rounded-full bg-ink-900">
+            <Text className="text-paper text-[10px] font-mono">06</Text>
+          </View>
         </View>
 
-        {sections.map((s) => (
-          <View
+        <Card tint="bone" className="mb-5">
+          <Text style={styles.title}>
+            Find the answer before the next tray is seated.
+          </Text>
+          <Text className="text-ink-600 text-sm leading-5 mt-3 font-body">
+            The reference side keeps procedures, scripts, and wire notes close enough to use between patients.
+          </Text>
+          <View className="flex-row gap-3 mt-5">
+            <Button variant="primary">Search</Button>
+            <Button variant="secondary">Recent</Button>
+          </View>
+        </Card>
+
+        {referenceSections.map((s, index) => (
+          <Pressable
             key={s.title}
-            className="rounded-2xl p-5 mb-3"
-            style={{ backgroundColor: s.surface }}
+            onPress={() => router.push({ pathname: "/reference/[slug]", params: { slug: s.slug } })}
+            className="rounded-lg p-5 mb-3"
+            style={[shadows.soft, { backgroundColor: s.surface }]}
           >
             <View className="flex-row items-center justify-between">
               <View className="flex-1 pr-4">
@@ -35,25 +51,35 @@ export default function Reference() {
                     style={{ backgroundColor: s.accent }}
                   />
                   <Text
-                    className="text-xs uppercase tracking-wider font-semibold"
+                    className="text-[10px] uppercase tracking-wider font-mono"
                     style={{ color: s.accent }}
                   >
-                    Section
+                    {String(index + 1).padStart(2, "0")} / Section
                   </Text>
                 </View>
-                <Text className="text-petrol font-semibold text-base">{s.title}</Text>
-                <Text className="text-ink-600 text-sm mt-1">{s.sub}</Text>
+                <Text className="text-ink-900 font-tight-semibold text-base">{s.title}</Text>
+                <Text className="text-ink-600 text-sm mt-1 leading-5 font-body">{s.sub}</Text>
               </View>
               <View
                 className="rounded-full px-3 py-1"
-                style={{ backgroundColor: "rgba(255,255,255,0.5)" }}
+                style={{ backgroundColor: colors.lineSoft }}
               >
-                <Text className="text-ink-700 text-xs font-semibold">{s.count}</Text>
+                <Text className="text-ink-700 text-xs font-mono">{s.count}</Text>
               </View>
             </View>
-          </View>
+          </Pressable>
         ))}
       </ScrollView>
     </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  title: {
+    color: colors.inkBase,
+    fontFamily: "InterTight_800ExtraBold",
+    fontSize: 31,
+    lineHeight: 32,
+    letterSpacing: 0,
+  },
+});

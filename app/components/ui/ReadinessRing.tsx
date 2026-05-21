@@ -49,11 +49,11 @@ export function ReadinessRing({
         />
       </Svg>
       <View className="absolute items-center">
-        <Text className="text-4xl font-bold" style={{ color: labelColor }}>
+        <Text className="text-4xl font-tight-bold" style={{ color: labelColor }}>
           {Math.round(clamped)}%
         </Text>
         <Text
-          className="text-xs uppercase tracking-wider font-medium mt-1"
+          className="text-[10px] uppercase tracking-wider font-mono mt-1"
           style={{ color: labelColor, opacity: 0.7 }}
         >
           Ready

@@ -11,11 +11,11 @@ export default function TabLayout() {
         tabBarInactiveTintColor: colors.ink[400],
         tabBarStyle: {
           backgroundColor: colors.bone,
-          borderTopColor: colors.ink[200],
+          borderTopColor: colors.line,
         },
         headerShown: false,
         tabBarButton: HapticTab,
-        tabBarLabelStyle: { fontFamily: "Inter_500Medium", fontSize: 11 },
+        tabBarLabelStyle: { fontFamily: "JetBrainsMono_500Medium", fontSize: 10 },
       }}>
       <Tabs.Screen
         name="index"
@@ -29,6 +29,13 @@ export default function TabLayout() {
         options={{
           title: "Reference",
           tabBarIcon: ({ color }) => <IconSymbol size={26} name="magnifyingglass" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="progress"
+        options={{
+          title: "Progress",
+          tabBarIcon: ({ color }) => <IconSymbol size={26} name="chart.bar.fill" color={color} />,
         }}
       />
     </Tabs>

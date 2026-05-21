@@ -18,7 +18,7 @@ A native mobile app for orthodontic assistants:
 | App | Expo SDK 54 + React Native 0.81 + TypeScript |
 | Routing | Expo Router |
 | Styling | NativeWind v4 + Tailwind 3 |
-| Type | Inter via @expo-google-fonts |
+| Type | Inter Tight, Inter, JetBrains Mono, Playfair via @expo-google-fonts |
 | Charts/Icons | react-native-svg, Expo Symbols |
 | Backend | Supabase (planned) |
 | Subscriptions | RevenueCat (planned) |
@@ -51,17 +51,17 @@ Double-click one of the scripts in `scripts/`:
 
 ## Status
 
-Phase 0 / 3 in progress. Scaffold built, design system in code, dashboard + reference screens mocked with hardcoded data. No backend, auth, or real question bank yet.
+Phase 0 / 3 in progress. Scaffold built, Open Design-inspired design system in code, and a navigable UI prototype exists for Study, Reference, Progress, Mock Exam, and Subscription screens. No backend, auth, or real question bank yet.
 
 See `HANDOFF.md` for the live picture of what's done and what's next.
 
 ## Brand
 
-- **Petrol** `#0E2A30` — deep teal, primary brand
-- **Sand** `#F4E8D5` — warm cream background
-- **Coral** `#E8744F` — primary accent
-- **Mint** `#7CC2A7` — secondary accent
-- **Tinted surfaces** — blush, sage, sky, sunshine, clay for color-zoned content
+- **Paper** `#EFE7D2` — parchment app background
+- **Ink** `#15140F` — primary text and high-contrast surfaces
+- **Bone** `#F7F1DE` — elevated cards
+- **Coral** `#ED6F5C` — primary action accent
+- **Mono labels + expressive serif emphasis** — taken from the Open Design extraction
 
 ## License
 

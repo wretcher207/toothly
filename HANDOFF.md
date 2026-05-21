@@ -1,11 +1,11 @@
 # Toothly — Session Handoff
 
-**Last updated:** 2026-05-20
-**Repo:** local git, two commits on `main`. Push to GitHub via `scripts/push-to-github.bat`.
+**Last updated:** 2026-05-21
+**Repo:** GitHub origin is `https://github.com/wretcher207/toothly.git`. Current UI work is on `codex/apply-open-design-system`.
 
 ## Where we are
 
-Scaffold + design system v1 in place. Dashboard and Reference screens mocked with the redesigned warm palette. No backend yet.
+Scaffold + Open Design-inspired design system in place. The app is now a navigable UI prototype with mocked Study, Reference, Progress, Mock Exam, and Subscription screens. No backend, auth, payments, FSRS, or real question bank is wired yet.
 
 ## Decisions locked
 
@@ -16,19 +16,17 @@ Scaffold + design system v1 in place. Dashboard and Reference screens mocked wit
 - **Backend (planned):** Supabase + RevenueCat + FSRS + PostHog
 - **Name:** Toothly
 - **Bundle ID:** `com.deadpixel.toothly`
-- **Brand palette v2 (after David's "warmer, more color" pass):**
-  - Petrol `#0E2A30` (deepened from `#123339`)
-  - Sand `#F4E8D5` background (was cool cream)
-  - Coral `#E8744F` primary accent (deepened from `#F68A63`)
-  - Mint `#7CC2A7`, amber `#D69B3C`, plum `#7A4A5C`
-  - Tinted surfaces: bone, blush, sage, sky, sunshine, clay — used as the default Card system, not white-on-cream
-- **Domain color coding:** every major content domain has a consistent surface+accent pair (`domainColors` in `lib/tokens.ts`)
+- **Brand/design system v3:** applied from `C:\Users\david\workspace\open-design-extraction`
+  - Paper `#EFE7D2`, bone `#F7F1DE`, ink `#15140F`, coral `#ED6F5C`
+  - Typography: Inter Tight for display, Inter for body, JetBrains Mono for labels, Playfair italic for expressive emphasis
+  - Components use pill buttons, 18px cards, warm shadows, mono section labels, and restrained coral accents
+- **Domain color coding:** every major content domain has a consistent surface+accent pair in `lib/tokens.ts`
 
 ## Repo state
 
-- Local git initialized on `main`
-- Two commits: initial scaffold + push script
-- **Not yet on GitHub** — gh auth was expired. David runs `scripts/push-to-github.bat` to re-auth and push.
+- Local git has `main` pushed to GitHub.
+- Current UI branch: `codex/apply-open-design-system`
+- `gh auth status` passed for `wretcher207` during the UI pass.
 
 ## What lives where
 
@@ -48,6 +46,8 @@ toothly/
 └── app/                Expo project
     ├── app/                Expo Router routes (Study + Reference tabs)
     ├── components/ui/      Button, Card, StatCard, ReadinessRing
+    ├── lib/mock-data.ts    mock study/reference data for prototype flows
+    ├── lib/layout.ts       shared max-width web preview content shell
     ├── lib/tokens.ts       design tokens source of truth
     ├── tailwind.config.js  NativeWind theme mirroring tokens
     ├── babel.config.js     NativeWind v4 preset
@@ -61,18 +61,19 @@ Double-click **`scripts/dev-web.bat`**. When the menu appears, press **`w`** for
 
 For phone preview: **`scripts/dev-tunnel.bat`**, install Expo Go, scan the QR.
 
-## Push to GitHub
+## Current UI routes
 
-Double-click **`scripts/push-to-github.bat`**. It will:
-1. Log into GitHub (browser opens for OAuth)
-2. Create `toothly` as a private repo
-3. Push `main`
-
-If repo already exists it tries to set the remote and push instead.
+- `/` — Study dashboard with Open Design treatment
+- `/study/session` — mock answer/reveal question flow
+- `/mock-exam` — timed mock exam selection shell
+- `/explore` — Reference tab with tappable sections
+- `/reference/[slug]` — reference detail shell
+- `/progress` — readiness report tab
+- `/paywall` — subscription preview screen
 
 ## Decisions pending
 
-- David to confirm v2 palette direction after viewing the redesigned dashboard
+- David to confirm Open Design-inspired direction after viewing the expanded prototype
 - Pricing model lock ($9.99/mo + $79/yr is the working assumption)
 - Free tier scope
 - First 200 seed questions (SME friend authors)
@@ -81,17 +82,17 @@ If repo already exists it tries to set the remote and push instead.
 
 ## Still hardcoded / fake
 
-- Dashboard data (streak, accuracy, domain progress, etc.) is all mock
+- Dashboard, progress, study session, reference detail, mock exam, and subscription data are all mock
 - No auth, no paywall, no real question flow
 - No content yet (taxonomy + 200 seed questions are next)
 
 ## Next session should
 
-1. Confirm the v2 brand direction is good or get the next round of redirects
-2. Build the question-answer flow: `/study/session` route with one-question UI, answer reveal, explanation card, next button
-3. Set up Supabase project + schema (questions, domains, users, progress for FSRS, mock_exams, attempts)
-4. Pull DANB OA + ICE exam outline PDFs to drive content taxonomy
-5. Wire RevenueCat sandbox so paywall structure is in place
+1. Continue UI before backend: onboarding, empty states, settings/profile, mock exam in-progress and results screens
+2. Replace mock copy with reviewed content taxonomy and first seed question set
+3. Set up Supabase schema only after UI shape is approved
+4. Wire RevenueCat sandbox after pricing/free tier is confirmed
+5. Add real FSRS progress persistence after the question flow is final enough
 
 ## Open tasks
 

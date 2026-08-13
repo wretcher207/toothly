@@ -55,16 +55,14 @@ Freemium with $9.99/mo or $79/yr subscription. Free tier: ~50 questions, limited
 ## Key paths
 
 ```
-PROJECT = C:\Users\david\workspace\toothly
+PROJECT = C:\Users\wretc\workspace\toothly
 FIGMA   = (pending Design-file URL)
 ```
 
 ## How David works
 
-- Windows-native (PowerShell), no WSL needed for this project
-- Build scripts as .bat or .ps1 he can double-click
-- Terse responses, no trailing summaries
-- Don't suggest terminal commands without scripting them
+Windows-native (PowerShell), no WSL. Build scripts as .bat or .ps1 he can
+double-click rather than terminal commands to retype.
 
 ## See also
 

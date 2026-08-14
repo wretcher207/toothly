@@ -1,3 +1,5 @@
+> status: active | one-liner: dental COA prep app: scaffold plus design system v1 mocked, no backend yet | next: unknown
+
 # Toothly — Session Handoff
 
 **Last updated:** 2026-05-20

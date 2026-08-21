@@ -1,27 +1,30 @@
 import { ReactNode } from "react";
-import { View } from "react-native";
+import { StyleProp, View, ViewStyle } from "react-native";
+import { shadows } from "@/lib/tokens";
 
-type Tint = "bone" | "blush" | "sage" | "sky" | "sunshine" | "clay" | "petrol";
+type Tint = "bone" | "paper" | "blush" | "sage" | "sky" | "sunshine" | "clay" | "ink";
 
 interface CardProps {
   children: ReactNode;
   className?: string;
   tint?: Tint;
+  style?: StyleProp<ViewStyle>;
 }
 
 const tints: Record<Tint, string> = {
-  bone:     "bg-bone border border-ink-200",
-  blush:    "bg-blush border border-coral/20",
-  sage:     "bg-sage border border-mint/30",
-  sky:      "bg-sky border border-info/20",
-  sunshine: "bg-sunshine border border-amber/30",
-  clay:     "bg-clay border border-plum/20",
-  petrol:   "bg-petrol border border-petrol-deep",
+  bone: "bg-bone",
+  paper: "bg-paper",
+  blush: "bg-blush",
+  sage: "bg-sage",
+  sky: "bg-sky",
+  sunshine: "bg-sunshine",
+  clay: "bg-clay",
+  ink: "bg-ink-900",
 };
 
-export function Card({ children, className = "", tint = "bone" }: CardProps) {
+export function Card({ children, className = "", tint = "bone", style }: CardProps) {
   return (
-    <View className={`${tints[tint]} rounded-2xl p-5 ${className}`}>
+    <View style={[shadows.card, style]} className={`${tints[tint]} rounded-lg p-6 ${className}`}>
       {children}
     </View>
   );

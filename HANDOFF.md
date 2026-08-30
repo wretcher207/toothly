@@ -1,4 +1,4 @@
-> status: active | one-liner: dental COA prep app: scaffold plus design system v1 mocked, no backend yet | next: unknown
+> status: paused, scaffold only | one-liner: dental COA prep app: scaffold plus design system v1 mocked, no backend yet | next: confirm the v2 brand direction, then build the question-answer flow at /study/session, stand up Supabase (questions, domains, users, FSRS progress, mock exams, attempts), pull the DANB OA and ICE exam outlines to drive the content taxonomy, and wire the RevenueCat sandbox. Dashboard data is all mock and there is no auth, paywall, question flow or content yet.
 
 # Toothly — Session Handoff
 

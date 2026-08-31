@@ -1,4 +1,21 @@
-> status: paused, scaffold only | one-liner: dental COA prep app: scaffold plus design system v1 mocked, no backend yet | next: confirm the v2 brand direction, then build the question-answer flow at /study/session, stand up Supabase (questions, domains, users, FSRS progress, mock exams, attempts), pull the DANB OA and ICE exam outlines to drive the content taxonomy, and wire the RevenueCat sandbox. Dashboard data is all mock and there is no auth, paywall, question flow or content yet.
+> status: active again, scaffold only | one-liner: dental exam prep app, RE-AIMED AT CDA (2026-08-31): scaffold plus design system v1 mocked, no backend yet, content taxonomy now real | next: waitlist landing page to test demand, then draft ICE seed questions from the cited public sources in CONTENT_TAXONOMY.md. Dashboard data is all mock and there is no auth, paywall, question flow or content yet.
+
+## Pivot decision, 2026-08-31 (David's call)
+
+- **Target changed from COA to CDA.** DANB counted ~1,000 COA holders EVER
+  (cumulative, late 2022) vs 30,000+ active CDAs. The COA choice existed because
+  of the SME co-founder; David is no longer in contact with her, so the narrow
+  cert lost its only advantage.
+- **ICE ships first** as the wedge: no eligibility requirements, shared across
+  NELDA/CDA/COA, and draftable from public CDC/OSHA documents with citations.
+- **No paid content review.** Cite-everything drafting + review-for-lifetime-access
+  recruits (instructors preferred) + a beta "flag this question" button. Details in
+  CONTENT_TAXONOMY.md.
+- `CONTENT_TAXONOMY.md` is now real: full GC/RHS/ICE domain trees, DANB weightings,
+  600-question allocation, question schema, and drafting-source order, built from
+  the official outlines in `reference/` (downloaded 2026-08-31 from danb.org).
+- CLAUDE.md still describes the COA target and SME workflow; it needs the same
+  re-aim before the next build session.
 
 # Toothly — Session Handoff
 

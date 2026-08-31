@@ -1,4 +1,21 @@
-> status: active again, scaffold only | one-liner: dental exam prep app, RE-AIMED AT CDA (2026-08-31): scaffold plus design system v1 mocked, no backend yet, content taxonomy now real | next: waitlist landing page to test demand, then draft ICE seed questions from the cited public sources in CONTENT_TAXONOMY.md. Dashboard data is all mock and there is no auth, paywall, question flow or content yet.
+> status: active again, waitlist LIVE | one-liner: dental exam prep app, RE-AIMED AT CDA (2026-08-31); waitlist landing page deployed and verified at toothly-landing.vercel.app | next: David adds toothly.deadpixeldesign.com (Vercel dashboard: project toothly-landing > Domains, then GoDaddy CNAME), then draft ICE seed questions from the cited public sources in CONTENT_TAXONOMY.md. App itself is still scaffold only: mock dashboard, no auth, paywall, question flow or content.
+
+## Waitlist landing, deployed 2026-08-31
+
+- Live: https://toothly-landing.vercel.app (Vercel project `toothly-landing`,
+  team wretcher207s-projects, prj_ppLFsF9YJXLtptbHK54Q5oMjpCHt). Static, no build.
+- Signups insert into `public.toothly_waitlist` in the **take** Supabase project
+  (skrtgeptxlnsfeawxzik) via the publishable key embedded in the page. RLS lets
+  anon INSERT only; the key cannot read the list. Verified live end to end
+  (row landed from the deployed page; smoke-test rows deleted).
+- Duplicate email = 409, shown to the visitor as success.
+- Read the list: `select email, created_at from toothly_waitlist` in the take
+  project's SQL editor. Move the table to a Toothly-owned project before launch.
+- Source of truth: `landing/index.html` + `landing/COPY.md`. Redeploy via the
+  Vercel MCP deploy (files upload), not git integration.
+- Canonical/OG URLs point at https://toothly.deadpixeldesign.com/ — the domain
+  is NOT yet attached (DNS at GoDaddy). Until David adds it, the vercel.app URL
+  serves with a mismatched canonical, which is fine pre-announcement.
 
 ## Pivot decision, 2026-08-31 (David's call)
 

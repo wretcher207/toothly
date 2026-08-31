@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DANB CDA Exam Prep App | Toothly</title>
+<meta name="description" content="Study what the DANB CDA exam actually tests. Practice questions in DANB's real proportions, spaced repetition, timed mocks, and a readiness score. $79/year.">
+<link rel="canonical" href="https://toothly.deadpixeldesign.com/">
+<meta property="og:title" content="DANB CDA Exam Prep App | Toothly">
+<meta property="og:description" content="Study what the DANB CDA exam actually tests. Practice in DANB's real proportions, spaced repetition, timed mocks, and a readiness score.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://toothly.deadpixeldesign.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What's actually on the CDA exam?","acceptedAnswer":{"@type":"Answer","text":"Three exams bundled together. General Chairside (95 questions), Radiation Health and Safety (75 questions), and Infection Control (75 questions). 245 questions total."}},
+    {"@type":"Question","name":"How long is the CDA exam?","acceptedAnswer":{"@type":"Answer","text":"195 minutes if you sit for all three at once. General Chairside is 75 minutes, Radiation Health and Safety is 60, Infection Control is 60."}},
+    {"@type":"Question","name":"What does it cost to sit for the CDA exam?","acceptedAnswer":{"@type":"Answer","text":"$450 for the bundled application fee, paid to DANB directly. That's separate from anything Toothly charges."}},
+    {"@type":"Question","name":"Who's eligible to take the CDA exam?","acceptedAnswer":{"@type":"Answer","text":"Infection Control and Radiation Health and Safety have no eligibility requirements, anyone can register for those two. General Chairside needs either a CODA-accredited program or 3,500 verified hours of work experience."}},
+    {"@type":"Question","name":"What's on the Infection Control (ICE) exam?","acceptedAnswer":{"@type":"Answer","text":"Four domains, per DANB's outline: preventing disease transmission (20%), preventing cross-contamination (34%), instrument and device processing (26%), and occupational safety protocols like the OSHA Bloodborne Pathogens Standard (20%). No eligibility requirements to sit for it."}},
+    {"@type":"Question","name":"When does Toothly launch?","acceptedAnswer":{"@type":"Answer","text":"It's in development now. Waitlist members get first access and the founding $79/year price when it opens."}}
+  ]
+}
+</script>
+<style>
+  :root{
+    --petrol:#0E2A30; --sand:#F4E8D5; --coral:#E8744F; --mint:#7CC2A7;
+    --amber:#D69B3C; --plum:#7A4A5C;
+    --bone:#FAF3E7; --blush:#F6E3DA; --sage:#E4EFE9; --sunshine:#F7ECD7;
+    --ink:#0E2A30; --ink-soft:rgba(14,42,48,.72);
+    --radius:16px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+    background:var(--sand); color:var(--ink); line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  header{padding:28px 0}
+  .logo{font-weight:800;font-size:1.35rem;letter-spacing:-.02em}
+  .logo span{color:var(--coral)}
+
+  .hero{padding:56px 0 64px;text-align:center}
+  .hero h1{
+    font-size:clamp(2rem,5.5vw,3.2rem);font-weight:800;letter-spacing:-.03em;
+    line-height:1.12;max-width:16em;margin:0 auto 20px;
+  }
+  .hero h1 em{font-style:normal;color:var(--coral)}
+  .hero .sub{
+    font-size:1.15rem;color:var(--ink-soft);max-width:34em;margin:0 auto 36px;
+  }
+  .signup{max-width:460px;margin:0 auto}
+  .signup form{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+  .signup input[type=email]{
+    flex:1 1 240px;padding:14px 18px;font:inherit;font-size:1rem;
+    border:2px solid var(--petrol);border-radius:12px;background:#fff;color:var(--ink);
+  }
+  .signup input[type=email]:focus{outline:3px solid var(--mint);outline-offset:1px}
+  .btn{
+    padding:14px 26px;font:inherit;font-size:1rem;font-weight:700;cursor:pointer;
+    background:var(--coral);color:#fff;border:2px solid var(--coral);border-radius:12px;
+    transition:transform .08s ease, background .15s ease;
+  }
+  .btn:hover{background:#d9633f;border-color:#d9633f}
+  .btn:active{transform:scale(.98)}
+  .reassure{font-size:.85rem;color:var(--ink-soft);margin-top:12px}
+  .form-msg{margin-top:14px;font-weight:600;display:none}
+  .form-msg.ok{display:block;color:#1d7a5a}
+  .form-msg.err{display:block;color:#b03d24}
+
+  section{padding:56px 0}
+  h2{font-size:clamp(1.4rem,3.4vw,1.9rem);font-weight:800;letter-spacing:-.02em;margin-bottom:18px}
+  .problem{background:var(--petrol);color:var(--sand)}
+  .problem p{max-width:42em;margin-bottom:14px;color:rgba(244,232,213,.88)}
+  .problem p strong{color:#fff}
+  .problem p:first-of-type{font-size:1.1rem}
+
+  .features .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:8px}
+  .card{background:var(--bone);border-radius:var(--radius);padding:26px;border:1px solid rgba(14,42,48,.08)}
+  .card:nth-child(2){background:var(--sage)}
+  .card:nth-child(3){background:var(--blush)}
+  .card .tag{
+    display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;
+    letter-spacing:.08em;padding:4px 10px;border-radius:999px;margin-bottom:14px;
+    background:var(--petrol);color:var(--sand);
+  }
+  .card h3{font-size:1.12rem;font-weight:700;margin-bottom:10px;letter-spacing:-.01em}
+  .card p{font-size:.95rem;color:var(--ink-soft)}
+
+  .pricing .box{
+    background:#fff;border:2px solid var(--petrol);border-radius:var(--radius);
+    padding:36px;max-width:560px;margin:0 auto;text-align:center;
+  }
+  .price{font-size:3rem;font-weight:800;letter-spacing:-.03em}
+  .price small{font-size:1.1rem;font-weight:600;color:var(--ink-soft)}
+  .founding{
+    display:inline-block;background:var(--sunshine);color:#8a5f17;font-weight:700;
+    font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;
+    padding:5px 12px;border-radius:999px;margin-bottom:10px;
+  }
+  .pricing .box p{margin-top:14px;color:var(--ink-soft);font-size:.97rem}
+  .pricing .box .ice{margin-top:18px;padding-top:18px;border-top:1px dashed rgba(14,42,48,.25)}
+  .pricing .btn{margin-top:22px}
+
+  .faq details{
+    background:var(--bone);border-radius:12px;border:1px solid rgba(14,42,48,.08);
+    padding:16px 20px;margin-bottom:10px;
+  }
+  .faq summary{font-weight:700;cursor:pointer;list-style:none;position:relative;padding-right:28px}
+  .faq summary::after{content:"+";position:absolute;right:2px;top:0;font-weight:800;color:var(--coral)}
+  .faq details[open] summary::after{content:"\2212"}
+  .faq details p{margin-top:10px;color:var(--ink-soft);font-size:.95rem}
+
+  footer{padding:40px 0 56px;text-align:center;color:var(--ink-soft);font-size:.85rem}
+  footer .brand{font-weight:600;color:var(--ink)}
+  footer .legal{max-width:44em;margin:10px auto 0}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="logo">tooth<span>ly</span></div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <h1>Study what the CDA exam <em>actually tests</em>.</h1>
+    <p class="sub">DANB publishes how much each topic counts. Chairside Dentistry is half the General Chairside exam by itself. Toothly builds your practice around those exact proportions, so your study time goes where the questions are.</p>
+    <div class="signup">
+      <form id="waitlist" method="post" action="/api/waitlist">
+        <input type="email" name="email" required placeholder="you@example.com" aria-label="Email address">
+        <button class="btn" type="submit">Join the Waitlist</button>
+      </form>
+      <p class="reassure">One email when we launch. No spam, no daily nagging.</p>
+      <p class="form-msg" id="formMsg" role="status"></p>
+    </div>
+  </section>
+
+  <section class="problem">
+    <div class="wrap">
+      <h2>Guessing which pages matter is not a study plan.</h2>
+      <p>Every CDA study guide points you at the same thing. A 1,200-page textbook, a stack of generic flashcards, and good luck.</p>
+      <p>That's not studying. It's guessing which pages matter and hoping you guessed right.</p>
+      <p><strong>DANB already tells you which pages matter.</strong> Chairside Dentistry is half the General Chairside exam by itself. Most flashcard decks treat it the same as a domain worth a fraction of that, because nobody built the deck around DANB's actual weighting in the first place.</p>
+    </div>
+  </section>
+
+  <section class="features wrap">
+    <h2>How Toothly works</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">Proportions</span>
+        <h3>Practice matches the real exam</h3>
+        <p>Every question is tagged to DANB's own domain breakdown for General Chairside, Radiation Health and Safety, and Infection Control. Chairside Dentistry runs half the GC exam, so it's half of what you practice. You study in the same proportions DANB tests in.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Adaptive</span>
+        <h3>Repetition that knows when you're about to forget</h3>
+        <p>Toothly runs on FSRS, a spaced repetition algorithm that brings each question back right before you'd naturally forget it. Get one wrong, it comes back sooner. A readiness score across all three exams tells you when to book your test date.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Chairside</span>
+        <h3>Stays useful after you pass</h3>
+        <p>Pass the exam and Toothly doesn't go in a drawer. The same content becomes a chairside reference: instrument lookup, procedure checklists, patient scripts, all pulled from what you already studied.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing wrap">
+    <div class="box">
+      <span class="founding">Founding price</span>
+      <div class="price">$79<small>/year</small></div>
+      <p>Join the waitlist now and lock that price in for as long as you stay subscribed once Toothly launches. All three question banks, spaced repetition, timed mock exams built to match the real formats, and the readiness score.</p>
+      <p class="ice">ICE has no eligibility requirements, so it's the exam most people can start on today. At launch, waitlist members get a free ICE starter deck before the rest of the app opens up.</p>
+      <button class="btn" onclick="document.querySelector('#waitlist input').focus();window.scrollTo({top:0,behavior:'smooth'})">Join the Waitlist</button>
+    </div>
+  </section>
+
+  <section class="faq wrap">
+    <h2>CDA exam questions, answered</h2>
+    <details>
+      <summary>What's actually on the CDA exam?</summary>
+      <p>Three exams bundled together. General Chairside (95 questions), Radiation Health and Safety (75 questions), and Infection Control (75 questions). 245 questions total.</p>
+    </details>
+    <details>
+      <summary>How long is the CDA exam?</summary>
+      <p>195 minutes if you sit for all three at once. General Chairside is 75 minutes, Radiation Health and Safety is 60, Infection Control is 60.</p>
+    </details>
+    <details>
+      <summary>What does it cost to sit for it?</summary>
+      <p>$450 for the bundled application fee, paid to DANB directly. That's separate from anything Toothly charges.</p>
+    </details>
+    <details>
+      <summary>Who's eligible to take it?</summary>
+      <p>Infection Control and Radiation Health and Safety have no eligibility requirements, anyone can register for those two. General Chairside needs either a CODA-accredited program or 3,500 verified hours of work experience.</p>
+    </details>
+    <details>
+      <summary>What's on the Infection Control exam?</summary>
+      <p>Four domains, per DANB's outline: preventing disease transmission (20%), preventing cross-contamination (34%), instrument and device processing (26%), and occupational safety protocols like the OSHA Bloodborne Pathogens Standard (20%). No eligibility requirements to sit for it, which is why Toothly is building that question bank first.</p>
+    </details>
+    <details>
+      <summary>When does Toothly launch?</summary>
+      <p>It's in development now. Waitlist members get first access and the founding $79/year price when it opens.</p>
+    </details>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p class="brand">Dead Pixel Design, Houlton, Maine.</p>
+  <p class="legal">Toothly is not affiliated with or endorsed by DANB. DANB, CDA, RHS, ICE, and NELDA are trademarks of the Dental Assisting National Board.</p>
+</footer>
+
+<script>
+  const form = document.getElementById('waitlist');
+  const msg = document.getElementById('formMsg');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    msg.className = 'form-msg';
+    const email = form.email.value.trim();
+    try {
+      const res = await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      form.reset();
+      msg.textContent = "You're on the list. One email when we launch.";
+      msg.className = 'form-msg ok';
+    } catch {
+      msg.textContent = 'That did not go through. Try again in a minute.';
+      msg.className = 'form-msg err';
+    }
+  });
+</script>
+</body>
+</html>

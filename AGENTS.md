@@ -50,12 +50,12 @@ Freemium with $9.99/mo or $79/yr subscription. Free tier: ~50 questions, limited
 
 ## Status
 
-**Phase 0 — Discovery.** SME friend interviewing her network to validate pain points and pricing. Figma file pending (initial URL was a Figma Sites file by mistake, need a Design file).
+See `HANDOFF.md` and current files for development state. Verify certification, eligibility, and price claims against current DANB sources before putting them into the product.
 
 ## Key paths
 
 ```
-PROJECT = C:\Users\david\workspace\toothly
+PROJECT = C:\Users\wretc\workspace\toothly
 FIGMA   = (pending Design-file URL)
 ```
 
@@ -64,7 +64,7 @@ FIGMA   = (pending Design-file URL)
 - Windows-native (PowerShell), no WSL needed for this project
 - Build scripts as .bat or .ps1 he can double-click
 - Terse responses, no trailing summaries
-- Don't suggest terminal commands without scripting them
+- Create a double-click script when David needs a reusable operation; run ordinary development commands directly.
 
 ## See also
 
@@ -74,4 +74,4 @@ FIGMA   = (pending Design-file URL)
 
 ## Tasks
 
-Tracked in task system. Use TaskList to see current state.
+Use the current handoff and repository task records. Public/UI writing must pass the appropriate voice profile; clinical content also requires the SME review described above.

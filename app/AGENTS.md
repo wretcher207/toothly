@@ -1,3 +1,3 @@
-# Expo HAS CHANGED
+# Expo app
 
-Read the exact versioned docs at https://docs.expo.dev/versions/v54.0.0/ before writing any code.
+For Expo-specific changes, check the installed version in `package.json` and consult its matching official documentation. The original scaffold used Expo SDK 54. Public/UI text requires the appropriate voice-profile pass.

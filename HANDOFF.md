@@ -1,4 +1,4 @@
-> status: active again, waitlist LIVE | one-liner: dental exam prep app, RE-AIMED AT CDA (2026-08-31); waitlist landing page deployed and verified at toothly-landing.vercel.app | next: David adds toothly.deadpixeldesign.com (Vercel dashboard: project toothly-landing > Domains, then GoDaddy CNAME), then draft ICE seed questions from the cited public sources in CONTENT_TAXONOMY.md. App itself is still scaffold only: mock dashboard, no auth, paywall, question flow or content.
+> status: active, waitlist LIVE on its own subdomain | one-liner: dental exam prep app, RE-AIMED AT CDA (2026-08-31); waitlist deployed and verified at toothly.deadpixeldesign.com | next: draft ICE seed questions from the cited public sources in CONTENT_TAXONOMY.md. The app itself is still scaffold only: no auth, no paywall, no content.
 
 ## Waitlist landing, deployed 2026-08-31
 
@@ -35,6 +35,20 @@
   re-aim before the next build session.
 
 # Toothly — Session Handoff
+
+## 2026-09-11: the subdomain is live, and the DNS target that matters
+
+`toothly.deadpixeldesign.com` is verified serving the waitlist over HTTPS: HTTP 200, a
+Let's Encrypt cert issued for exactly that hostname, page title "DANB CDA Exam Prep App |
+Toothly". David had already added the domain in Vercel.
+
+**The CNAME target is `cname.vercel-dns-0.com`, not `cname.vercel-dns.com`.** The older
+value still resolves into Vercel and the site works either way, but Vercel shows a
+"DNS Change Recommended" banner against it. The two other Vercel subdomains on this domain,
+`healingwithhannah` and `windsofharmony`, carried the same stale target and were updated to
+match on 2026-09-11. The four Netlify subdomains on deadpixeldesign.com point at
+`*.netlify.app` and are unrelated.
+
 
 **Last updated:** 2026-05-20
 **Repo:** local git, two commits on `main`. Push to GitHub via `scripts/push-to-github.bat`.

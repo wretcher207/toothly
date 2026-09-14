@@ -35,6 +35,16 @@ export const domainLabels: Record<Domain, string> = {
   "ICE-IV": "Safety and Administration",
 };
 
+/** Share of the real exam per domain, from DANB's ICE outline (effective 03/12/2025). */
+export const domainWeights: Record<Domain, number> = {
+  "ICE-I": 20,
+  "ICE-II": 34,
+  "ICE-III": 26,
+  "ICE-IV": 20,
+};
+
+export const ICE_EXAM = { questions: 75, minutes: 60 };
+
 export const allQuestions = [...iceI, ...iceII, ...iceIII, ...iceIV] as Question[];
 
 function shuffle<T>(items: T[]): T[] {
@@ -72,4 +82,10 @@ export function buildSession({ count = 10, domain, ids }: SessionOptions = {}): 
 
 export function isDomain(value: unknown): value is Domain {
   return typeof value === "string" && value in domainLabels;
+}
+
+export const domains = Object.keys(domainLabels) as Domain[];
+
+export function countByDomain(domain: Domain): number {
+  return allQuestions.filter((q) => q.domain === domain && q.status !== "retired").length;
 }

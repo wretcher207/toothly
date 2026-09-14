@@ -5,6 +5,7 @@ import { router, useLocalSearchParams } from "expo-router";
 import * as Haptics from "expo-haptics";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
+import { domainColors } from "@/lib/tokens";
 import { buildSession, domainLabels, isDomain, type Domain, type SessionQuestion } from "@/lib/questions";
 
 const LETTERS = ["A", "B", "C", "D"];
@@ -259,7 +260,7 @@ function Summary({ results, onReview }: { results: Result[]; onReview: (ids?: st
 
         <Text className="text-petrol text-xl font-bold mb-3">By domain</Text>
         {byDomain.map(({ d, total, right }) => (
-          <View key={d} className="rounded-2xl p-5 mb-3 bg-sky">
+          <View key={d} className="rounded-2xl p-5 mb-3" style={{ backgroundColor: domainColors[d].surface }}>
             <View className="flex-row items-center justify-between mb-3">
               <Text className="text-petrol font-semibold flex-1 pr-3">{domainLabels[d]}</Text>
               <Text className="text-ink-600 text-sm font-medium">
@@ -267,7 +268,10 @@ function Summary({ results, onReview }: { results: Result[]; onReview: (ids?: st
               </Text>
             </View>
             <View className="h-2 bg-bone rounded-full overflow-hidden">
-              <View className="h-full rounded-full bg-info" style={{ width: `${(right / total) * 100}%` }} />
+              <View
+                className="h-full rounded-full"
+                style={{ width: `${(right / total) * 100}%`, backgroundColor: domainColors[d].accent }}
+              />
             </View>
           </View>
         ))}

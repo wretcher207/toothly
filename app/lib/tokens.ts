@@ -48,14 +48,12 @@ export const colors = {
   info: "#4F7B95",
 } as const;
 
-// Domain color assignments — each major content area gets a consistent accent
+// Domain color assignments — each exam domain gets a consistent surface + accent
 export const domainColors = {
-  toothMovement:  { surface: "#F8DCCC", accent: "#E8744F" },  // blush + coral
-  appliances:     { surface: "#DCE9DC", accent: "#7CC2A7" },  // sage + mint
-  infectionCtrl:  { surface: "#D8E2E8", accent: "#4F7B95" },  // sky + info
-  cephalometrics: { surface: "#F5DDA5", accent: "#D69B3C" },  // sunshine + amber
-  patientCare:    { surface: "#E8C9B5", accent: "#7A4A5C" },  // clay + plum
-  diagnostics:    { surface: "#DCE9DC", accent: "#3A8A6A" },  // sage + success
+  "ICE-I":   { surface: "#D8E2E8", accent: "#4F7B95" },  // sky + info
+  "ICE-II":  { surface: "#F8DCCC", accent: "#E8744F" },  // blush + coral
+  "ICE-III": { surface: "#DCE9DC", accent: "#3A8A6A" },  // sage + success
+  "ICE-IV":  { surface: "#F5DDA5", accent: "#D69B3C" },  // sunshine + amber
 } as const;
 
 export const space = {

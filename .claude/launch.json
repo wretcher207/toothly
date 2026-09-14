@@ -4,8 +4,23 @@
     {
       "name": "toothly-landing",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["-y", "serve", "-l", "4173", "landing"],
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "-l",
+        "4173",
+        "landing"
+      ],
       "port": 4173
+    },
+    {
+      "name": "toothly-app-web",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "cd app && npx expo start --web --port 8081"
+      ],
+      "port": 8081
     }
   ]
 }

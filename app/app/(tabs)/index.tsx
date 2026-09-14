@@ -1,5 +1,6 @@
 import { ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { router } from "expo-router";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { StatCard } from "@/components/ui/StatCard";
@@ -71,7 +72,7 @@ export default function StudyHome() {
               <Text className="text-petrol font-semibold text-base">22 questions</Text>
               <Text className="text-ink-600 text-sm mt-0.5">~12 min · keeps your streak</Text>
             </View>
-            <Button variant="primary">Start</Button>
+            <Button variant="primary" onPress={() => router.push("/study/session")}>Start</Button>
           </View>
         </Card>
 

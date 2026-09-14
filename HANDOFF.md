@@ -1,4 +1,24 @@
-> status: active, waitlist LIVE, 70 ICE seed questions drafted | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: recruit reviewers for the ICE drafts, or build the one-question study flow against content/ice/*.json. The app is still scaffold only: no auth, no paywall, no content wired in.
+> status: active, waitlist LIVE, 70 ICE seed questions drafted, study session flow working | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: recruit reviewers for the ICE drafts; persist results and flags (Supabase + FSRS); replace the dashboard's mock COA data. No auth, no paywall yet.
+
+
+## 2026-09-14: study session flow
+
+- Route `app/app/study/session.tsx`, opened by the dashboard's Spaced review **Start**
+  button. Optional params `?domain=ICE-II&count=10`.
+- One question at a time: pick a choice, **Check answer**, then a result card with the
+  explanation, citation, expandable source quote and a **Flag this question** toggle.
+  Summary at the end shows score by domain, retry-missed, and a new set.
+- Choices are shuffled per session and the key remapped (`lib/questions.ts`), so answer
+  position can't be memorized. Explanations never refer to letters.
+- Questions load straight from `../content/ice/*.json`; `metro.config.js` adds
+  `../content` to `watchFolders` for that.
+- Nothing persists yet: results and flags live in component state only.
+- The dashboard around it is still the May mock (ortho domains, fake stats).
+- Verified in Expo web at 375px: full 10-question run, wrong-answer reveal, quote
+  toggle, flag, summary counts, retry-missed (9 of 9). `tsc` clean. `expo lint` has two
+  pre-existing unescaped-apostrophe errors in `app/(tabs)/index.tsx`.
+- Web preview: `.claude/launch.json` entry `toothly-app-web` (port 8081), or
+  `scripts/dev-web.bat`.
 
 ## 2026-09-14: ICE seed bank drafted, CLAUDE.md re-aimed
 

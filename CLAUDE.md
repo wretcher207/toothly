@@ -1,31 +1,57 @@
 # Toothly
 
-DANB COA exam prep + ortho-assistant career companion. Native iOS + Android (Expo RN).
+DANB CDA exam prep + dental-assistant career companion. Native iOS + Android (Expo RN).
 
 **Pitch in one line:** the prep app that becomes your chairside reference.
 
 ## Who
 
-- **David Russell (Dead Pixel Harmonix)** — builder/owner
-- **SME co-founder (David's friend)** — domain expert, former ortho assistant. Reviews content, writes question bank, validates clinical accuracy. Will interact with the project via Figma comments.
+- **David Russell (Dead Pixel Harmonix)** — builder/owner. No co-founder or SME
+  on the project (the original ortho-assistant SME is out of the picture as of
+  2026-08-31).
+- **Reviewers (planned, unpaid):** 3-5 working CDAs or dental-assisting
+  instructors, paid in free lifetime access. See `CONTENT_TAXONOMY.md`.
 
 ## What it is
 
 Two-phase product, single app:
 
-- **Phase 1 (prep):** spaced-repetition study, domain-tagged quizzes, timed mock exams matching DANB OA format (140q/105min) and full COA (215q/165min). Readiness score.
-- **Phase 2 (career):** instrument lookup, wire chart, bracket prescriptions (MBT/Roth/Damon), procedure checklists, English+Spanish patient scripts, case journal, CDE tracker for COA recert.
+- **Phase 1 (prep):** spaced-repetition study weighted to DANB's published
+  domain percentages, domain-tagged quizzes, timed mock exams matching each CDA
+  component (GC, RHS, ICE). Readiness score.
+- **Phase 2 (career):** instrument lookup, procedure checklists, English+Spanish
+  patient scripts, case journal, CDE tracker for CDA renewal.
 
 Same content, different surface. Career features retain subscribers past their exam date.
 
 ## Target cert
 
-**DANB COA (Certified Orthodontic Assistant).** Two components:
-- **OA exam:** 140 questions, 105 minutes
-- **ICE exam:** Infection Control
-- **Bundled COA:** 215q, 165min, $450 application fee
+**DANB CDA (Certified Dental Assistant).** Pivoted from COA on 2026-08-31:
+~1,000 COA holders ever vs 30,000+ active CDAs.
 
-Eligibility: 4 pathways, most common is 3,500 hrs verified ortho-assistant experience + current CPR/BLS.
+| Component | Questions | Minutes | Eligibility |
+|---|---|---|---|
+| GC — General Chairside | 95 | 75 | CODA-accredited program or 3,500 verified hours |
+| RHS — Radiation Health and Safety | 75 | 60 | None |
+| ICE — Infection Control | 75 | 60 | None |
+| Bundled CDA | 245 | 195 | $450 application fee |
+
+**ICE ships first.** No eligibility requirements, shared by NELDA, CDA, and COA,
+and draftable from public CDC/OSHA documents. It is also the free-tier funnel
+(waitlist members were promised a free ICE starter deck). RHS second, GC last.
+
+Official outlines live in `reference/`. Verify certification, eligibility, and
+price claims against current DANB sources before putting them into the product.
+
+## Content rules
+
+- Every question carries a `source_citation` at draft time. No citation, no question.
+- Questions are original. Never copy DANB practice items, DALE Foundation
+  products, or textbook question banks.
+- Describe compatibility ("prep for DANB's CDA exam"), never affiliation. DANB,
+  CDA, RHS, ICE, and NELDA are DANB trademarks; include the non-affiliation
+  disclaimer in the app and store listings.
+- Schema, domain weights, and bank allocation: `CONTENT_TAXONOMY.md`.
 
 ## Tech stack (locked unless we find a reason to change)
 
@@ -42,34 +68,48 @@ Eligibility: 4 pathways, most common is 3,500 hrs verified ortho-assistant exper
 
 ## Competitive picture
 
-COA-specific prep is underserved. Most DANB prep apps target the more popular CDA (general cert). Adjacent ortho apps (OrthoKit, IvoSmile, ADA Chairside) are clinician-facing or patient-education, not assistant-facing. Real gap.
+CDA prep is a crowded market compared with COA, so the edge has to be the
+product, not the niche: practice proportioned to DANB's published domain
+weights, FSRS scheduling, cited explanations, and a reference that stays useful
+after the exam.
 
 ## Pricing (working assumption)
 
-Freemium with $9.99/mo or $79/yr subscription. Free tier: ~50 questions, limited reference. Paid: full bank, unlimited mocks, all reference, case journal, CE tracker. RevenueCat handles Apple + Google compliance.
+Founding price of $79/yr is promised to waitlist members on the live landing
+page. $9.99/mo is still the assumed monthly option. Free tier: ICE starter deck,
+limited reference. Paid: all three banks, unlimited mocks, all reference, case
+journal, CE tracker. RevenueCat handles Apple + Google compliance.
 
 ## Status
 
-**Phase 0 — Discovery.** SME friend interviewing her network to validate pain points and pricing. Figma file pending (initial URL was a Figma Sites file by mistake, need a Design file).
+See `HANDOFF.md` and current files for development state.
 
 ## Key paths
 
 ```
-PROJECT = C:\Users\wretc\workspace\toothly
-FIGMA   = (pending Design-file URL)
+PROJECT  = C:\Users\wretc\workspace\toothly
+APP      = app\            Expo project
+LANDING  = landing\        waitlist page, live at toothly.deadpixeldesign.com
+CONTENT  = content\        drafted question bank
+OUTLINES = reference\      DANB exam outline PDFs
+FIGMA    = (pending Design-file URL)
 ```
 
 ## How David works
 
-Windows-native (PowerShell), no WSL. Build scripts as .bat or .ps1 he can
-double-click rather than terminal commands to retype.
+- Windows-native (PowerShell), no WSL needed for this project
+- Build scripts as .bat or .ps1 he can double-click
+- Terse responses, no trailing summaries
+- Create a double-click script when David needs a reusable operation; run ordinary development commands directly.
 
 ## See also
 
 - `HANDOFF.md` — current session state, pick up here
-- `MARKET_RESEARCH.md` — to be filled after Phase 0 interviews
-- `CONTENT_TAXONOMY.md` — to be filled after DANB exam outlines parsed
+- `CONTENT_TAXONOMY.md` — domain trees, weights, question schema, drafting sources, review plan
+- `landing/COPY.md` — waitlist copy and the promises it makes
 
 ## Tasks
 
-Tracked in task system. Use TaskList to see current state.
+Use the current handoff and repository task records. Public/UI writing must pass
+the appropriate voice profile. Clinical content must cite its source and goes
+through the reviewer and in-app flag process in `CONTENT_TAXONOMY.md`.

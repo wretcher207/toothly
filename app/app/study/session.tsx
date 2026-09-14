@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router, useLocalSearchParams } from "expo-router";
@@ -6,16 +6,12 @@ import * as Haptics from "expo-haptics";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { domainColors } from "@/lib/tokens";
+import { saveSession, type Attempt } from "@/lib/results";
 import { buildSession, domainLabels, isDomain, type Domain, type SessionQuestion } from "@/lib/questions";
 
 const LETTERS = ["A", "B", "C", "D"];
 
-interface Result {
-  id: string;
-  domain: Domain;
-  correct: boolean;
-  flagged: boolean;
-}
+type SaveState = "saving" | "saved" | "error" | "off";
 
 function buzz(correct: boolean) {
   if (process.env.EXPO_OS === "web") return;
@@ -29,39 +25,70 @@ export default function StudySession() {
   const count = Number(params.count) || 10;
   const domain = isDomain(params.domain) ? params.domain : undefined;
   const [questions, setQuestions] = useState(() => buildSession({ count, domain }));
+  // Domain of the current set; a retry of missed questions is a mixed set.
+  const [setDomain, setSetDomain] = useState(domain);
+  const [startedAt, setStartedAt] = useState(() => new Date().toISOString());
+  const shownAt = useRef(Date.now());
+  const checkedAt = useRef(Date.now());
 
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [revealed, setRevealed] = useState(false);
   const [showQuote, setShowQuote] = useState(false);
   const [flagged, setFlagged] = useState(false);
-  const [results, setResults] = useState<Result[]>([]);
+  const [results, setResults] = useState<Attempt[]>([]);
+  const [saveState, setSaveState] = useState<SaveState>("off");
 
   const finished = results.length === questions.length && questions.length > 0;
   const q = questions[index];
 
   function restart(ids?: string[]) {
     setQuestions(buildSession({ count, domain, ids }));
+    setSetDomain(ids ? undefined : domain);
+    setStartedAt(new Date().toISOString());
+    shownAt.current = Date.now();
     setIndex(0);
     setSelected(null);
     setRevealed(false);
     setShowQuote(false);
     setFlagged(false);
     setResults([]);
+    setSaveState("off");
+  }
+
+  function persist(attempts: Attempt[]) {
+    setSaveState("saving");
+    saveSession({ domain: setDomain, startedAt, attempts })
+      .then((outcome) => setSaveState(outcome === "saved" ? "saved" : "off"))
+      .catch((error) => {
+        console.warn("Saving session failed", error);
+        setSaveState("error");
+      });
   }
 
   function check() {
     if (selected === null) return;
+    checkedAt.current = Date.now();
     setRevealed(true);
     buzz(selected === q.correct_index);
   }
 
   function next() {
-    setResults((r) => [
-      ...r,
-      { id: q.id, domain: q.domain, correct: selected === q.correct_index, flagged },
-    ]);
+    if (selected === null) return;
+    const attempt: Attempt = {
+      questionId: q.id,
+      domain: q.domain,
+      selectedIndex: q.order[selected],
+      correct: selected === q.correct_index,
+      flagged,
+      timeMs: checkedAt.current - shownAt.current,
+      answeredAt: new Date(checkedAt.current).toISOString(),
+    };
+    const all = [...results, attempt];
+    setResults(all);
     if (index + 1 < questions.length) setIndex(index + 1);
+    else persist(all);
+    shownAt.current = Date.now();
     setSelected(null);
     setRevealed(false);
     setShowQuote(false);
@@ -69,7 +96,9 @@ export default function StudySession() {
   }
 
   if (finished) {
-    return <Summary results={results} onReview={restart} />;
+    return (
+      <Summary results={results} onReview={restart} saveState={saveState} onRetrySave={() => persist(results)} />
+    );
   }
 
   if (!q) {
@@ -234,9 +263,19 @@ function Choice({
   );
 }
 
-function Summary({ results, onReview }: { results: Result[]; onReview: (ids?: string[]) => void }) {
+function Summary({
+  results,
+  onReview,
+  saveState,
+  onRetrySave,
+}: {
+  results: Attempt[];
+  onReview: (ids?: string[]) => void;
+  saveState: SaveState;
+  onRetrySave: () => void;
+}) {
   const correct = results.filter((r) => r.correct).length;
-  const missed = results.filter((r) => !r.correct).map((r) => r.id);
+  const missed = results.filter((r) => !r.correct).map((r) => r.questionId);
   const flaggedCount = results.filter((r) => r.flagged).length;
   const percent = Math.round((correct / results.length) * 100);
 
@@ -256,6 +295,15 @@ function Summary({ results, onReview }: { results: Result[]; onReview: (ids?: st
             {correct} of {results.length}
           </Text>
           <Text className="text-sand/70 text-sm mt-1">{percent}% correct</Text>
+          {saveState === "saving" && <Text className="text-sand/70 text-xs mt-3">Saving your results…</Text>}
+          {saveState === "saved" && <Text className="text-mint text-xs mt-3 font-semibold">Results saved</Text>}
+          {saveState === "error" && (
+            <Pressable onPress={onRetrySave} accessibilityRole="button" hitSlop={8} className="mt-3 self-start">
+              <Text className="text-coral text-xs font-semibold underline">
+                Couldn&apos;t save these results. Tap to try again.
+              </Text>
+            </Pressable>
+          )}
         </Card>
 
         <Text className="text-petrol text-xl font-bold mb-3">By domain</Text>

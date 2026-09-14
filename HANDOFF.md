@@ -1,5 +1,31 @@
-> status: active, waitlist LIVE, 70 ICE seed questions drafted, study session flow working | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: recruit reviewers for the ICE drafts; persist results and flags (Supabase + FSRS). No auth, no paywall yet.
+> status: active, waitlist LIVE, 70 ICE seed questions drafted, study sessions save to Supabase | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: recruit reviewers for the ICE drafts; FSRS scheduling from question_attempts; show saved progress on the dashboard. No real accounts or paywall yet.
 
+
+
+## 2026-09-14: session results saved to Supabase
+
+- **Project:** `toothly` (ref `ltamlswdkckutchlffkb`, us-west-2) in the free **dpd207**
+  org, which is David's second Supabase login. The other login's orgs can't create
+  projects while Dead Pixel Design has overdue invoices. "Automatically expose new
+  tables" is off and automatic RLS is on.
+- **Schema:** `supabase/migrations/20260914000000_study_results.sql`, applied through the
+  Management API. `study_sessions` has one row per finished set; `question_attempts`
+  has one row per answer, with `selected_index` in source-file order, `correct`,
+  `flagged` and `time_ms`. RLS lets a user insert and read only their own rows.
+- **Identity:** anonymous sign-ins are enabled. `lib/supabase.ts` signs in anonymously
+  on the first save, and the session persists in AsyncStorage. Link a real account
+  later with `linkIdentity` / `updateUser` so history carries over.
+- **App:** `lib/results.ts` saves when a set finishes. The summary shows "Results
+  saved", or a tap-to-retry line if the save failed. With no env vars set, saving is
+  skipped silently.
+- **Keys:** `app/.env.local` (gitignored) holds `EXPO_PUBLIC_SUPABASE_URL` and the
+  publishable key `EXPO_PUBLIC_SUPABASE_KEY`. `app/.env.example` documents both.
+  Restart Expo after changing them.
+- **Verified live:** a 10-question web run wrote 1 session and 10 attempts under an
+  anonymous user. The saved choices matched the answer key, a second anonymous user
+  read 0 rows, and a no-login read returned 401. Test rows and the second user
+  were deleted.
+- Free projects pause after a week with no activity.
 
 ## 2026-09-14: study session flow
 
@@ -12,7 +38,6 @@
   position can't be memorized. Explanations never refer to letters.
 - Questions load straight from `../content/ice/*.json`; `metro.config.js` adds
   `../content` to `watchFolders` for that.
-- Nothing persists yet: results and flags live in component state only.
 - Dashboard (`app/app/(tabs)/index.tsx`) now shows only real data: today's date, the
   ICE exam format (75q / 60 min), a mixed 10-question set, the biggest domain, and the
   four ICE domains with DANB weights and bank counts. Each domain row opens a

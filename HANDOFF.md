@@ -1,4 +1,23 @@
-> status: active, waitlist LIVE on its own subdomain | one-liner: dental exam prep app, RE-AIMED AT CDA (2026-08-31); waitlist deployed and verified at toothly.deadpixeldesign.com | next: draft ICE seed questions from the cited public sources in CONTENT_TAXONOMY.md. The app itself is still scaffold only: no auth, no paywall, no content.
+> status: active, waitlist LIVE, 70 ICE seed questions drafted | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: recruit reviewers for the ICE drafts, or build the one-question study flow against content/ice/*.json. The app is still scaffold only: no auth, no paywall, no content wired in.
+
+## 2026-09-14: ICE seed bank drafted, CLAUDE.md re-aimed
+
+- `CLAUDE.md` and `AGENTS.md` now describe the CDA target, ICE-first plan, and
+  no-SME review model (identical files).
+- **70 ICE questions** in `content/ice/ICE-I..IV.json` (14/24/18/14, matching the
+  seed allocation), all `status: draft`. Difficulty 20/30/20, answer keys evenly spread.
+- Every question has `source_doc` + `source_quote`, an exact span from the plain-text
+  copies of CDC 2003, CDC 2016, OSHA 1910.1030 and 1910.1200 in `reference/sources/`.
+  `python scripts/verify_questions.py content/ice/*.json` checks schema, quotes,
+  dashes and all/none-of-the-above. Passes.
+- cdc.gov blocks scripted downloads; the CDC copies came from the Wayback Machine.
+- Items a reviewer should look at first: I-005, I-007, I-008, I-013 (2003-era
+  guidance not restated in 2016); II-016, II-017 (sources lack trap-cleaning text,
+  so they test saliva-ejector backflow); III-013, III-017 (key goes one inference
+  past the quote); IV-010 (HazCom file too thin on first aid; label rule is
+  changing by 2026-11-20 but the English-label point is not).
+- Not a substitute for review: quotes prove the key is sourced, not that the
+  distractors are unarguable or that 2003 guidance is still current.
 
 ## Waitlist landing, deployed 2026-08-31
 

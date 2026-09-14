@@ -110,11 +110,15 @@ Subtopics:
 
 ```
 id, exam (GC|RHS|ICE), domain (e.g. ICE-II), subtopic, stem, choices[4],
-correct_index, explanation, source_citation, difficulty (1-3),
-status (draft|reviewed|flagged|retired), reviewer, flag_count
+correct_index, explanation, source_doc, source_citation, source_quote,
+difficulty (1-3), status (draft|reviewed|flagged|retired), reviewer, flag_count
 ```
 
 `source_citation` is mandatory at draft time. No citation, no question.
+`source_quote` is an exact span from the plain-text source copy named by
+`source_doc` (`reference/sources/<source_doc>.txt`), so a reviewer checks the
+key against the quote instead of hunting through the document.
+`python scripts/verify_questions.py content/ice/*.json` checks schema and quotes.
 
 ## Drafting sources (public and authoritative first)
 

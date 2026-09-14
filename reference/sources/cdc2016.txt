@@ -1,0 +1,1201 @@
+Summary of Infection Prevention
+Practices in Dental Settings Basic Expectations
+for Safe Care
+
+Note to Readers
+This document is a summary guide of basic infection prevention recommendations for all dental health care settings. These include traditional settings such as private dental practices, dental clinics, dental schools and educational programs (including dental assisting, dental hygiene, and laboratory) and nontraditional settings that often use portable dental equipment such as clinics held in schools for sealant and fluoride placement and in other sites for humanitarian dental missions.
+While the information included in this document reflects existing evidence-based guidelines produced by the Centers for
+
+Disease Control and Prevention (CDC), it is not intended as a replacement for more extensive guidelines. This summary guide is based primarily upon elements of Standard Precautions and represents a summary of basic infection prevention expectations for safe care in dental settings as recommended in the Guidelines for Infection Control in Dental Health-Care Settings--2003. Readers are urged to use the Infection Prevention Checklist for Dental Settings (Appendix A), a companion to the summary; and to consult the full guidelines for additional background, rationale, and scientific evidence behind each recommendation.
+
+Suggested Citation
+Centers for Disease Control and Prevention. Summary of Infection Prevention Practices in Dental Settings: Basic Expectations for Safe Care. Atlanta, GA: Centers for Disease Control and Prevention, US Dept of Health
+and Human Services; October 2016.
+Adapted from: Guide to Infection Prevention for Outpatient Settings: Minimum Expectations for Safe Care http://www.cdc.gov/hai/settings/outpatient/outpatient-care-guidelines.html
+ii
+
+Contents
+Suggested Citation......................................................................................................................................................ii Introduction....................................................................................................................................................................... 2 Objectives........................................................................................................................................................................... 3 Fundamental Elements Needed to Prevent Transmission of Infectious Agents in Dental Settings................................................................................................................................... 4
+Administrative Measures............................................................................................................................................ 4 Infection Prevention Education and Training .................................................................................................... 4 Dental Health Care Personnel Safety..................................................................................................................... 5 Program Evaluation...................................................................................................................................................... 6 Standard Precautions................................................................................................................................................... 6
+Hand Hygiene........................................................................................................................................................ 7 Personal Protective Equipment...................................................................................................................... 7 Respiratory Hygiene/Cough Etiquette........................................................................................................ 8 Sharps Safety.......................................................................................................................................................... 9 Safe Injection Practices....................................................................................................................................10 Sterilization and Disinfection of Patient-Care Items and Devices................................................... 12 Environmental Infection Prevention and Control..................................................................................14 Dental Unit Water Quality........................................................................................................................................ 15 Risk Assessment ......................................................................................................................................................16 Conclusions..................................................................................................................................................................... 16 Source Documents.................................................................................................................................................... 17 Appendix A: Infection Prevention Checklist for Dental Settings: Basic Expectations for Safe Care...............................................................................................................................18 Section I: Policies and Practices............................................................................................................................. 19 Section II: Direct Observation of Personnel and Patient-Care Practices..................................................27 Appendix B: Relevant Recommendations Published by CDC Since 2003........36 Appendix C: Selected References and Additional Resources by Topic Area................................................................................................................................................................38
+1
+
+Introduction
+Transmission of infectious agents among patients and dental health care personnel (DHCP) in dental settings is rare. However, from 2003 to 2015, transmissions in dental settings, including patientto-patient transmissions, have been documented.1-4 In most cases, investigators failed to link a specific lapse of infection prevention and control with a particular transmission. However, reported breakdowns in basic infection prevention procedures included unsafe injection practices, failure to heat sterilize dental handpieces between patients, and failure to monitor (e.g., conduct spore testing) autoclaves.2,3 These reports highlight the need for comprehensive training to improve understanding of underlying principles, recommended practices, their implementation, and the conditions that have to be met for disease transmission.
+All dental settings, regardless of the level of care provided, must make infection prevention a priority and should be equipped to observe Standard Precautions and other infection prevention recommendations contained in CDC's Guidelines for Infection Control in Dental Health-Care Settings--2003.5 The Summary of Infection Prevention Practices in Dental Settings: Basic Expectations for Safe Care summarizes current infection prevention recommendations and includes a checklist (Appendix A) that can be used to evaluate compliance.
+The information presented here is based primarily upon the recommendations from the 2003 guideline and represents infection prevention expectations for safe care in dental settings. It is intended for use by anyone needing information about basic infection prevention measures in dental health care settings, but is not a replacement for the more extensive
+
+guidelines. Readers are urged to consult the full guidelines for additional background, rationale, and scientific evidence behind each recommendation. Additional topics and information relevant to dental infection prevention and control published by CDC since 2003 in this document can be found in Appendix B including
+ Infection prevention program administrative measures.
+ Infection prevention education and training.  Respiratory hygiene and cough etiquette.  Updated safe injection practices.  Administrative measures for instrument processing.
+For the purposes of this document, DHCP refers to all paid and unpaid personnel in the dental health care setting who might be occupationally exposed to infectious materials, including body substances and contaminated supplies, equipment, environmental surfaces, water, or air. This includes
+ Dentists.  Dental hygienists.  Dental assistants.  Dental laboratory technicians
+(in-office and commercial).
+ Students and trainees.  Contractual personnel.  Other persons not directly involved in patient
+care but potentially exposed to infectious agents (e.g., administrative, clerical, housekeeping, maintenance, or volunteer personnel).5
+
+2
+
+Objectives
+By highlighting existing CDC recommendations, this summary guide
+1. Provides basic infection prevention principles and recommendations for dental health care settings.
+2. Reaffirms Standard Precautions as the foundation for preventing transmission of infectious agents during patient care in all dental health care settings.
+3. Provides links to full guidelines and source documents that readers can reference for more detailed background and recommendations.
+
+For additional references, background information, rationale, and evidence, readers should consult the references and resources listed in Appendix C. Detailed recommendations for dental health care settings can be found in the compendium document, Recommendations from the Guidelines for Infection Control in Dental Health-Care Settings--2003.
+
+References
+1. Redd JT, Baumbach J, Kohn W, et al. Patient-to-patient transmission of hepatitis B virus associated with oral surgery. J Infect Dis. 2007;195(9):1311-1314.
+2. Radcliffe RA, Bixler D, Moorman A, et al. Hepatitis B virus transmissions associated with a portable dental clinic, West Virginia, 2009. J Am Dent Assoc. 2013;144(10):1110-1118.
+3. Oklahoma State Department of Health. Dental Healthcare-Associated Transmission of Hepatitis C: Final Report of Public Health Investigation and Response, 2013. Available at: http://www.ok.gov/health2/documents/ Dental%20Healthcare_Final%20Report_2_17_15.pdf.
+4. Klevens RM, Moorman AC. Hepatitis C virus: an overview for dental health care providers. J Am Dent Assoc. 2013;144(12):1340-1347.
+5. Centers for Disease Control and Prevention. Guidelines for infection control in dental health-care settings--2003. MMWR Recomm Rep 2003;52(RR-17):1-61. Available at: www.cdc.gov/mmwr/PDF/rr/rr5217.pdf.
+
+3
+
+Fundamental Elements Needed to Prevent Transmission of Infectious Agents in Dental Settings
+
+Administrative Measures
+Infection prevention must be made a priority in any dental health care setting. At least one individual with training in infection prevention--the infection prevention coordinator--should be responsible for developing written infection prevention policies and procedures based on evidence-based guidelines, regulations, or standards. Policies and procedures should be tailored to the dental setting and reassessed on a regular basis (e.g., annually) or according to state or federal requirements. Development should take into consideration the types of services provided by DHCP and the patient population served, extending beyond the Occupational Safety and Health Administration
+
+(OSHA) bloodborne pathogens standard to address patient safety. The infection prevention coordinator should ensure that equipment and supplies (e.g., hand hygiene products, safer devices to reduce percutaneous injuries, and personal protective equipment) are available and should maintain communication with all staff members to address specific issues or concerns related to infection prevention. In addition, all dental settings should have policies and protocols for early detection and management of potentially infectious persons at initial points of patient encounter.
+
+Key ADMINISTRATIVE RECOMMENDATIONS for Dental Settings
+
+1. Develop and maintain infection prevention and occupational health programs.
+2. Provide supplies necessary for adherence to Standard Precautions (e.g., hand hygiene products, safer devices to reduce percutaneous injuries, personal protective equipment).
+3. Assign at least one individual trained in infection prevention responsibility for coordinating the program.
+
+4. Develop and maintain written infection prevention policies and procedures appropriate for the services provided by the facility and based on evidence-based guidelines, regulations, or standards.
+5. Facility has system for early detection and management of potentially infectious persons at initial points of patient encounter.
+
+Infection Prevention Education and Training
+
+Ongoing education and training of DHCP are critical for ensuring that infection prevention policies and procedures are understood and followed. Education on the basic principles and practices for preventing the spread of infections should be provided to all DHCP. Training should include both DHCP safety (e.g., OSHA bloodborne pathogens training) and
+
+patient safety (e.g., emphasizing job- or task-specific needs). Education and training should be provided during orientation to the setting, when new tasks or procedures are introduced and at a minimum, annually. Training records should be maintained according to state and federal requirements.
+
+4
+
+Key Recommendations for EDUCATION AND TRAINING in Dental Settings
+
+1. Provide job- or task-specific infection prevention education and training to all DHCP.
+a. This includes those employed by outside agencies and available by contract or on a volunteer basis to the facility.
+
+2. Provide training on principles of both DHCP safety and patient safety.
+3. Provide training during orientation and at regular intervals (e.g., annually).
+4. Maintain training records according to state and federal requirements.
+
+Dental Health Care Personnel Safety
+
+Infection prevention programs should also address occupational health needs, including vaccination of DHCP, management of exposures or infections in personnel requiring post-exposure prophylaxis or work restrictions, and compliance with OSHA bloodborne pathogens standard. Referral arrangements for medical services can be made with qualified health care professionals in an occupational health program of a hospital, with educational institutions, or with health care facilities that offer personnel health services.
+
+Recommendations for prevention of infections in DHCP can be found in the following documents-- Guidelines for Infection Control in Dental HealthCare Settings--2003 (available at: www.cdc. gov/mmwr/PDF/rr/rr5217.pdf ), Immunization of Health-Care Personnel: Recommendations of the Advisory Committee on Immunization Practices (ACIP) (available at: http://www.cdc.gov/mmwr/pdf/rr/ rr6007.pdf ), and OSHA Bloodborne Pathogens and Needlestick Prevention (available at: http://www. osha.gov/SLTC/bloodbornepathogens/index.html).
+
+Key Recommendations for DENTAL HEALTH CARE PERSONNEL SAFETY
+
+1. Current CDC recommendations for immunizations, evaluation, and followup are available. There is a written policy regarding immunizing DHCP, including a list of all required and recommended immunizations for DHCP (e.g., hepatitis B, MMR (measles, mumps, and rubella) varicella (chickenpox), Tdap (tetanus, diphtheria, pertussis).
+
+3. Referral arrangements are in place to qualified health care professionals (e.g., occupational health program of a hospital, educational institutions, health care facilities that offer personnel health services) to ensure prompt and appropriate provision of preventive services, occupationallyrelated medical services, and postexposure management with medical follow-up.
+
+2. All DHCP are screened for tuberculosis (TB) upon hire regardless of the risk classification of the setting.
+
+4. Facility has well-defined policies concerning contact of personnel with patients when personnel have potentially transmissible conditions.
+
+5
+
+Program Evaluation
+A successful infection prevention program depends on  Developing standard operating procedures.  Evaluating practices and providing
+feedback to DHCP.  Routinely documenting adverse outcomes
+(e.g., occupational exposures to blood) and work-related illnesses in DHCP.  Monitoring health care associated infections in patients.
+Strategies and tools to evaluate the infection prevention program can include periodic observational assessments, checklists to document
+
+procedures, and routine review of occupational exposures to bloodborne pathogens. The Infection Prevention Checklist for Dental Settings found in Appendix A is one tool DHCP can use to evaluate their infection prevention program. Evaluation offers an opportunity to improve the effectiveness of both the infection-prevention program and dental practice protocols. If deficiencies or problems in the implementation of infection prevention procedures are identified--further evaluation and feedback, corrective action, and training (if applicable) is needed to eliminate the problems.
+
+Key Recommendation for PROGRAM EVALUATION in Dental Settings
+1. Establish routine evaluation of the infection prevention program, including evaluation of DHCP adherence to infection prevention practices.
+
+Standard Precautions
+Standard Precautions are the minimum infection prevention practices that apply to all patient care, regardless of suspected or confirmed infection status of the patient, in any setting where health care is delivered. These practices are designed to both protect DHCP and prevent DHCP from spreading infections among patients. Standard Precautions include--
+1. Hand hygiene. 2. Use of personal protective equipment (e.g., gloves,
+masks, eyewear). 3. Respiratory hygiene/cough etiquette. 4. Sharps safety (engineering and work practice
+controls). 5. Safe injection practices (i.e., aseptic technique for
+parenteral medications). 6. Sterile instruments and devices. 7. Clean and disinfected environmental surfaces.
+Each element of Standard Precautions is described in the following sections. Education and training are
+
+critical elements of Standard Precautions, because they help DHCP make appropriate decisions and comply with recommended practices.
+When Standard Precautions alone cannot prevent transmission, they are supplemented with Transmission-Based Precautions. This second tier of infection prevention is used when patients have diseases that can spread through contact, droplet or airborne routes (e.g., skin contact, sneezing, coughing) and are always used in addition to Standard Precautions. Dental settings are not typically designed to carry out all of the Transmission-Based Precautions (e.g., Airborne Precautions for patients with suspected tuberculosis, measles, or chickenpox) that are recommended for hospital and other ambulatory care settings. Patients, however, do not usually seek routine dental outpatient care when acutely ill with diseases requiring Transmission-Based Precautions. Nonetheless, DHCP should develop and carry out systems for early detection and management of
+
+6
+
+potentially infectious patients at initial points of entry to the dental setting. To the extent possible, this includes rescheduling non-urgent dental care
+Hand Hygiene
+Hand hygiene is the most important measure to prevent the spread of infections among patients and DHCP. Education and training programs should thoroughly address indications and techniques for hand hygiene practices before performing routine and oral surgical procedures.
+For routine dental examinations and nonsurgical procedures, use water and plain soap (hand washing) or antimicrobial soap (hand antisepsis) specific for health care settings or use an alcohol-based hand rub. Although alcohol-based hand rubs are effective for hand hygiene in health care settings, soap and water
+
+until the patient is no longer infectious or referral to a dental setting with appropriate infection prevention precautions when urgent dental treatment is needed.
+should be used when hands are visibly soiled (e.g., dirt, blood, body fluids). For surgical procedures,1 perform a surgical hand scrub before putting on sterile surgeon's gloves. For all types of hand hygiene products, follow the product manufacturer's label for instructions. Complete guidance on how and when hand hygiene should be performed, including recommendations regarding surgical hand antisepsis and artificial nails can be found in the Guideline for Hand Hygiene in Health-Care Settings (available at: http://www.cdc.gov/ mmwr/PDF/rr/rr5116.pdf ).
+
+Key Recommendations for HAND HYGIENE in Dental Settings
+
+1. Perform hand hygiene--
+
+c. Before and after treating each patient.
+
+a. When hands are visibly soiled.
+b. After barehanded touching of instruments, equipment, materials, and other objects likely to be contaminated by blood, saliva, or respiratory secretions.
+
+d. Before putting on gloves and again immediately after removing gloves.
+2. Use soap and water when hands are visibly soiled (e.g., blood, body fluids); otherwise, an alcohol-based hand rub may be used.
+
+Personal Protective Equipment
+Personal protective equipment (PPE) refers to wearable equipment that is designed to protect DHCP from exposure to or contact with infectious agents. PPE that is appropriate for various types of patient interactions and effectively covers personal clothing and skin likely to be soiled with blood, saliva, or other potentially infectious materials (OPIM) should be available. These include gloves, face masks, protective eye wear, face shields, and protective clothing (e.g., reusable or
+
+disposable gown, jacket, laboratory coat). Examples of appropriate use of PPE for adherence to Standard Precautions include--
+ Use of gloves in situations involving possible contact with blood or body fluids, mucous membranes, non-intact skin (e.g., exposed skin that is chapped, abraded, or with dermatitis) or OPIM.
+ Use of protective clothing to protect skin and clothing during procedures or activities where
+
+1 Definition from 2003 CDC Dental Guidelines-- O ral surgical procedures involve the incision, excision, or reflection of tissue that exposes the normally sterile areas of the oral cavity. Examples include biopsy, periodontal surgery, apical surgery, implant surgery, and surgical extractions of teeth (e.g., removal of erupted or nonerupted tooth requiring elevation of mucoperiosteal flap, removal of bone or section of tooth, and suturing if needed).
+
+7
+
+contact with blood or body fluids is anticipated.
+ Use of mouth, nose, and eye protection during procedures that are likely to generate splashes or sprays of blood or other body fluids.
+DHCP should be trained to select and put on appropriate PPE and remove PPE so that the chance for skin or clothing contamination is reduced. Hand hygiene is always the final step after removing and disposing of PPE. Training should also stress preventing further spread of contamination while wearing PPE by:
+
+ Keeping hands away from face.  Limiting surfaces touched.  Removing PPE when leaving work areas.  Performing hand hygiene.
+The application of Standard Precautions and guidance on appropriate selection and an example of putting on and removal of personal protective equipment is described in detail in the 2007 Guideline for Isolation Precautions (available at: http://www.cdc. gov/hicpac/pdf/isolation/Isolation2007.pdf ).
+
+Key Recommendations for PERSONAL PROTECTIVE EQUIPMENT (PPE) in Dental Settings
+
+1. Provide sufficient and appropriate PPE and ensure it is accessible to DHCP.
+
+c. Perform hand hygiene immediately after removing gloves.
+
+2. Educate all DHCP on proper selection and use of PPE.
+3. Wear gloves whenever there is potential for contact with blood, body fluids, mucous membranes, non-intact skin or contaminated equipment.
+a. Do not wear the same pair of gloves for the care of more than one patient.
+b. Do not wash gloves. Gloves cannot be reused.
+
+4. Wear protective clothing that covers skin and personal clothing during procedures or activities where contact with blood, saliva, or OPIM is anticipated.
+5. Wear mouth, nose, and eye protection during procedures that are likely to generate splashes or spattering of blood or other body fluids.
+6. Remove PPE before leaving the work area.
+
+Respiratory Hygiene/Cough Etiquette
+Respiratory hygiene/cough etiquette infection prevention measures are designed to limit the transmission of respiratory pathogens spread by droplet or airborne routes. The strategies target primarily patients and individuals accompanying patients to the dental setting who might have undiagnosed transmissible respiratory infections, but also apply to anyone (including DHCP) with signs of illness including cough, congestion, runny nose, or increased production of respiratory secretions.
+
+DHCP should be educated on preventing the spread of respiratory pathogens when in contact with symptomatic persons. Respiratory hygiene/cough etiquette measures were added to Standard Precautions in 2007. Additional information related to respiratory hygiene/cough etiquette can be found in the 2007 Guideline for Isolation Precautions (available at: http://www.cdc.gov/hicpac/pdf/isolation/ Isolation2007.pdf ). Recommendations for preventing the spread of influenza are available at: http://www. cdc.gov/flu/professionals/infectioncontrol/.
+
+8
+
+Key Recommendations for RESPIRATORY HYGIENE/COUGH ETIQUETTE in Dental Settings
+
+1. Implement measures to contain respiratory secretions in patients and accompanying individuals who have signs and symptoms of a respiratory infection, beginning at point of entry to the facility and continuing throughout the visit.
+a. Post signs at entrances with instructions to patients with symptoms of respiratory infection to--
+i. Cover their mouths/noses when coughing or sneezing.
+
+c. Provide resources for performing hand hygiene in or near waiting areas.
+d. Offer masks to coughing patients and other symptomatic persons when they enter the dental setting.
+e. Provide space and encourage persons with symptoms of respiratory infections to sit as far away from others as possible. If available, facilities may wish to place these patients in a separate area while waiting for care.
+
+ii. Use and dispose of tissues.
+iii. Perform hand hygiene after hands have been in contact with respiratory secretions.
+b. Provide tissues and no-touch receptacles for disposal of tissues.
+
+2. Educate DHCP on the importance of infection prevention measures to contain respiratory secretions to prevent the spread of respiratory pathogens when examining and caring for patients with signs and symptoms of a respiratory infection.
+
+Sharps Safety
+Most percutaneous injuries (e.g., needlestick, cut with a sharp object) among DHCP involve burs, needles, and other sharp instruments. Implementation of the OSHA Bloodborne Pathogens Standard has helped to protect DHCP from blood exposure and sharps injuries. However, sharps injuries continue to occur and pose the risk of bloodborne pathogen transmission to DHCP and patients. Most exposures in dentistry are preventable; therefore, each dental practice should have policies and procedures available addressing sharps safety. DHCP should be aware of the risk of injury whenever sharps are exposed. When using or working around sharp devices, DHCP should take precautions while using sharps, during cleanup, and during disposal.
+Engineering and work-practice controls are the primary methods to reduce exposures to blood and OPIM from sharp instruments and needles. Whenever possible, engineering controls should be
+
+used as the primary method to reduce exposures to bloodborne pathogens. Engineering controls remove or isolate a hazard in the workplace and are frequently technology-based (e.g., self-sheathing anesthetic needles, safety scalpels, and needleless IV ports). Employers should involve those DHCP who are directly responsible for patient care (e.g., dentists, hygienists, dental assistants) in identifying, evaluating and selecting devices with engineered safety features at least annually and as they become available. Other examples of engineering controls include sharps containers and needle recapping devices.
+When engineering controls are not available or appropriate, work-practice controls should be used. Work-practice controls are behavior-based and are intended to reduce the risk of blood exposure by changing the way DHCP perform tasks, such as using a one-handed scoop technique for recapping needles between uses and before disposal. Other work-
+
+9
+
+practice controls include not bending or breaking needles before disposal, not passing a syringe with an unsheathed needle by hand, removing burs before disassembling the handpiece from the dental unit, and using instruments in place of fingers for tissue retraction or palpation during suturing and administration of anesthesia.
+All used disposable syringes and needles, scalpel blades, and other sharp items should be placed in appropriate puncture-resistant containers located close to the area where they are used. Sharps containers should be disposed of according to state
+
+and local regulated medical waste rules.
+For more information about sharps safety, see the Guidelines for Infection Control in Dental Health-Care Settings--2003 (available at: www.cdc.gov/mmwr/ PDF/rr/rr5217.pdf ), the CDC Workbook for Designing, Implementing, and Evaluating a Sharps Injury Prevention Program (available at: www.cdc.gov/sharpssafety/), and the CDC Sample Screening and Device Evaluation Forms for Dentistry (available at: www.cdc.gov/ OralHealth/infectioncontrol/forms.htm).
+
+Key Recommendations for SHARPS SAFETY in Dental Settings
+
+1. Consider sharp items (e.g., needles, scalers, burs, lab knives, and wires) that are contaminated with patient blood and saliva as potentially infective and establish engineering controls and work practices to prevent injuries.
+
+3. Use either a one-handed scoop technique or a mechanical device designed for holding the needle cap when recapping needles (e.g., between multiple injections and before removing from a non-disposable aspirating syringe).
+
+2. Do not recap used needles by using both hands or any other technique that involves directing the point of a needle toward any part of the body.
+
+4. Place used disposable syringes and needles, scalpel blades, and other sharp items in appropriate puncture-resistant containers located as close as possible to the area where the items are used.
+
+Safe Injection Practices
+Safe injection practices are intended to prevent transmission of infectious diseases between one patient and another, or between a patient and DHCP during preparation and administration of parenteral (e.g., intravenous or intramuscular injection) medications. Safe injection practices are a set of measures DHCP should follow to perform injections in the safest possible manner for the protection of patients. DHCP most frequently handle parenteral medications when administering local anesthesia, during which needles and cartridges containing local anesthetics are used for one patient only and the
+
+dental cartridge syringe is cleaned and heat sterilized between patients. Other safe practices described here primarily apply to use of parenteral medications combined with fluid infusion systems, such as for patients undergoing conscious sedation. Unsafe practices that have led to patient harm include 1) use of a single syringe--with or without the same needle--to administer medication to multiple patients, 2) reinsertion of a used syringe--with or without the same needle--into a medication vial or solution container (e.g., saline bag) to obtain additional medication for a single patient and then
+
+10
+
+using that vial or solution container for subsequent patients, and 3) preparation of medications in close proximity to contaminated supplies or equipment.
+Safe injection practices were covered in the Special Considerations section (Aseptic Technique for Parenteral Medications) of the 2003 CDC dental guidelines. However, because of reports of transmission of infectious diseases by inappropriate handling of injectable medications, CDC now considers safe injection practices to be a formal element of Standard Precautions. Complete guidance on safe injection practices can be found in the 2007
+
+Guideline for Isolation Precautions (available at: http:// www.cdc.gov/hicpac/pdf/isolation/Isolation2007.pdf ). Additional materials, including a list of frequently asked questions from providers and a patient notification toolkit, are also available (http://www. cdc.gov/injectionsafety/). The One & Only Campaign is a public health effort to eliminate unsafe medical injections. The campaign is led by CDC and the Safe Injection Practices Coalition (SIPC). To learn more about safe injection practices and access training videos and resources, please visit http://www.oneandonlycampaign.org/.
+
+Key Recommendations for SAFE INJECTION PRACTICES in Dental Settings
+
+1. Prepare injections using aseptic technique2 in a clean area.
+
+8. The following apply if multidose vials are used--
+
+2. Disinfect the rubber septum on a medication vial with alcohol before piercing.
+
+a. Dedicate multidose vials to a single patient whenever possible.
+
+3. Do not use needles or syringes* for more than one patient (this includes manufactured prefilled syringes and other devices such as insulin pens).
+4. Medication containers (single and multidose vials, ampules, and bags) are entered with a new needle and new syringe, even when obtaining additional doses for the same patient.
+5. Use single-dose vials for parenteral medications when possible.
+6. Do not use single-dose (single-use) medication vials, ampules, and bags or bottles of intravenous solution for more than one patient.
+7. Do not combine the leftover contents of single-use vials for later use.
+
+b. If multidose vials will be used for more than one patient, they should be restricted to a centralized medication area and should not enter the immediate patient treatment area (e.g., dental operatory) to prevent inadvertent contamination.
+c. If a multidose vial enters the immediate patient treatment area, it should be dedicated for single-patient use and discarded immediately after use.
+d. Date multidose vials when first opened and discard within 28 days, unless the manufacturer specifies a shorter or longer date for that opened vial.
+9. Do not use fluid infusion or administration sets (e.g., IV bags, tubings, connections) for more than one patient.
+
+2 A technique that prevents or reduces the spread of microorganisms from one site to another, such as from patient to DHCP, from patient to operatory surfaces, or from one operatory surface to another.
+* A Note about Administering Local Dental Anesthesia: When using a dental cartridge syringe to administer local anesthesia, do not use the needle or anesthetic cartridge for more than one patient. Ensure that the dental cartridge syringe is appropriately cleaned and heat sterilized before use on another patient.
+11
+
+Sterilization and Disinfection of Patient-Care Items and Devices
+
+Instrument processing requires multiple steps using specialized equipment. Each dental practice should have policies and procedures in place for containing, transporting, and handling instruments and equipment that may be contaminated with blood or body fluids. Manufacturer's instructions for reprocessing reusable dental instruments and equipment should be readily available--ideally in or near the reprocessing area. Most single-use devices are labeled by the manufacturer for only a single use and do not have reprocessing instructions. Use single-use devices for one patient only and dispose of appropriately.
+Cleaning, disinfection and sterilization of dental equipment should be assigned to DHCP with training in the required reprocessing steps to ensure reprocessing results in a device that can be safely used for patient care. Training should also include the appropriate use of PPE necessary for safe handling of contaminated equipment.
+Patient-care items (e.g., dental instruments, devices, and equipment) are categorized as critical, semicritical, or noncritical, depending on the potential risk for infection associated with their intended use.
+ Critical items, such as surgical instruments and periodontal scalers, are those used to penetrate soft tissue or bone. They have the greatest risk of transmitting infection and should always be sterilized using heat.
+ Semicritical items (e.g., mouth mirrors, amalgam condensers, reusable dental impression trays) are those that come in contact with mucous membranes or non-intact skin (e.g., exposed skin that is chapped, abraded, or has dermatitis). These items have a lower risk of transmission. Because the majority of semicritical items in dentistry are heat-tolerant, they should also be sterilized using heat. If a semicritical item is heat-sensitive, DHCP should replace it with a heat-tolerant or disposable alternative. If none are available, it should, at a minimum,
+
+be processed using high-level disinfection.
+Note: Dental handpieces and associated attachments, including low-speed motors and reusable prophylaxis angles, should always be heat sterilized between patients and not highlevel or surface disinfected. Although these devices are considered semicritical, studies have shown that their internal surfaces can become contaminated with patient materials during use. If these devices are not properly cleaned and heat sterilized, the next patient may be exposed to potentially infectious materials.
+Digital radiography sensors are also considered semicritical and should be protected with a Food and Drug Administration (FDA)-cleared barrier to reduce contamination during use, followed by cleaning and heat-sterilization or high-level disinfection between patients. If the item cannot tolerate these procedures then, at a minimum, protect with an FDA-cleared barrier. In addition, clean and disinfect with an Environmental Protection Agency (EPA)-registered hospital disinfectant with intermediate-level (i.e., tuberculocidal claim) activity between patients. Because these items vary by manufacturer and their ability to be sterilized or high-level disinfected also vary, refer to manufacturer instructions for reprocessing.
+ Noncritical patient-care items (e.g., radiograph head/cone, blood pressure cuff, facebow) are those that only contact intact skin. These items pose the least risk of transmission of infection. In the majority of cases, cleaning, or if visibly soiled, cleaning followed by disinfection with an EPA-registered hospital disinfectant is adequate. Protecting these surfaces with disposable barriers might be a preferred alternative.
+Cleaning to remove debris and organic contamination from instruments should always occur before disinfection or sterilization. If blood, saliva, and other contamination are not removed, these materials can shield microorganisms and potentially compromise
+
+12
+
+the disinfection or sterilization process. Automated cleaning equipment (e.g., ultrasonic cleaner, washerdisinfector) should be used to remove debris to improve cleaning effectiveness and decrease worker exposure to blood. After cleaning, dried instruments should be inspected, wrapped, packaged, or placed into container systems before heat sterilization. Packages should be labeled to show the sterilizer used, the cycle or load number, the date of sterilization, and, if applicable, the expiration date. This information can help in retrieving processed items in the event of an instrument processing/sterilization failure.
+The ability of a sterilizer to reach conditions necessary to achieve sterilization should be monitored using a combination of biological, mechanical, and chemical indicators. Biological indicators, or spore tests, are the most accepted method for monitoring the sterilization process because they assess the sterilization process directly by killing known highly resistant microorganisms (e.g., Geobacillus or Bacillus species). A spore test should be used at least weekly to monitor sterilizers. However, because spore tests are only performed periodically (e.g., once a week, once a day) and the results are usually not obtained immediately, mechanical and chemical monitoring should also be performed.
+Mechanical and chemical indicators do not guarantee sterilization; however, they help detect procedural errors and equipment malfunctions. Mechanical monitoring involves checking the sterilizer gauges, computer displays, or printouts; and documenting the sterilization pressure, temperature, and exposure time in your sterilization records. Since these parameters can be observed during the sterilization cycle, this might be the first indication of a problem.
+Chemical monitoring uses sensitive chemicals that change color when exposed to high temperatures or combinations of time and temperature. Examples include chemical indicator tapes, strips or tabs, and special markings on packaging materials. Chemical monitoring results are obtained immediately following the sterilization cycle and therefore can provide more
+
+timely information about the sterilization cycle than a spore test. A chemical indicator should be used inside every package to verify that the sterilizing agent (e.g., steam) has penetrated the package and reached the instruments inside. If the internal chemical indicator is not visible from the outside of the package, an external indicator should also be used. External indicators can be inspected immediately when removing packages from the sterilizer. If the appropriate color change did not occur, do not use the instruments. Chemical indicators also help to differentiate between processed and unprocessed items, eliminating the possibility of using instruments that have not been sterilized.
+Note: A single-parameter internal chemical indicator provides information regarding only one sterilization parameter (e.g., time or temperature). Multiparameter internal chemical indicators are designed to react to  2 parameters (e.g., time and temperature; or time, temperature, and the presence of steam) and can provide a more reliable indication that sterilization conditions have been met.
+Sterilization monitoring (e.g., biological, mechanical, chemical monitoring) and equipment maintenance records are an important component of a dental infection prevention program. Maintaining accurate records ensures cycle parameters have been met and establishes accountability. In addition, if there is a problem with a sterilizer (e.g., unchanged chemical indicator, positive spore test), documentation helps to determine if an instrument recall is necessary.
+Ideally, sterile instruments and supplies should be stored in covered or closed cabinets. Wrapped packages of sterilized instruments should be inspected before opening and use to ensure the packaging material has not been compromised (e.g., wet, torn, punctured) during storage. The contents of any compromised packs should be reprocessed (i.e., cleaned, packaged, and heatsterilized again) before use on a patient.
+Recommendations for the cleaning, disinfection, and sterilization of dental equipment can be found in the Guidelines for Infection Control in Dental
+
+13
+
+Health-Care Settings--2003 (available at: www.cdc. gov/mmwr/PDF/rr/rr5217.pdf ). Recommendations for the cleaning, disinfection, and sterilization of medical equipment are available in the Guideline for Disinfection and Sterilization in Healthcare Facilities (available at: http://www.cdc.gov/
+
+hicpac/pdf/guidelines/Disinfection_Nov_2008. pdf ). FDA regulations on reprocessing of singleuse devices are available at: http://www.fda.gov/ MedicalDevices/DeviceRegulationandGuidance/ GuidanceDocuments/ucm071434.
+
+Key Recommendations for STERILIZATION AND DISINFECTION OF PATIENT-CARE DEVICES for Dental Settings
+
+1. Clean and reprocess (disinfect or sterilize) reusable dental equipment appropriately before use on another patient.
+
+3. Assign responsibilities for reprocessing of dental equipment to DHCP with appropriate training.
+
+2. Clean and reprocess reusable dental equipment according to manufacturer instructions. If the manufacturer does not provide such instructions, the device may not be suitable for multi-patient use.
+a. Have manufacturer instructions for reprocessing reusable dental instruments/equipment readily available, ideally in or near the reprocessing area.
+
+4. Wear appropriate PPE when handling and reprocessing contaminated patient equipment.
+5. Use mechanical, chemical, and biological monitors according to manufacturer instructions to ensure the effectiveness of the sterilization process. Maintain sterilization records in accordance with state and local regulations.
+
+Environmental Infection Prevention and Control
+
+Policies and procedures for routine cleaning and disinfection of environmental surfaces should be included as part of the infection prevention plan. Cleaning removes large numbers of microorganisms from surfaces and should always precede disinfection. Disinfection is generally a less lethal process of microbial inactivation (compared with sterilization) that eliminates virtually all recognized pathogenic microorganisms but not necessarily all microbial forms (e.g., bacterial spores).
+Emphasis for cleaning and disinfection should be placed on surfaces that are most likely to become contaminated with pathogens, including clinical contact surfaces (e.g., frequently touched surfaces such as light handles, bracket trays, switches on dental units, computer equipment) in the patient-care area. When these surfaces are touched, microorganisms can be transferred to other surfaces, instruments
+
+or to the nose, mouth, or eyes of DHCP or patients. Although hand hygiene is the key to minimizing the spread of microorganisms, clinical contact surfaces should be barrier protected or cleaned and disinfected between patients. EPA-registered hospital disinfectants or detergents/disinfectants with label claims for use in health care settings should be used for disinfection. Disinfectant products should not be used as cleaners unless the label indicates the product is suitable for such use. DHCP should follow manufacturer recommendations for use of products selected for cleaning and disinfection (e.g., amount, dilution, contact time, safe use, and disposal). Facility policies and procedures should also address prompt and appropriate cleaning and decontamination of spills of blood or other potentially infectious materials. Housekeeping surfaces, (e.g., floors, walls, sinks) carry less risk of disease transmission than clinical contact
+
+14
+
+surfaces and can be cleaned with soap and water or cleaned and disinfected if visibly contaminated with blood.
+Additional guidance for the cleaning and disinfection of environmental surfaces--including for cleaning blood or body substance spills--is available
+
+in the Guidelines for Environmental Infection Control in Health-Care Facilities (available at: http://www.cdc.gov/ hicpac/pdf/guidelines/eic_in_HCF_03.pdf ) and the Guideline for Disinfection and Sterilization in Healthcare Facilities (available at: http://www.cdc.gov/hicpac/pdf/ guidelines/Disinfection_Nov_2008.pdf ).
+
+Key Recommendations for ENVIRONMENTAL INFECTION PREVENTION AND CONTROL in Dental Settings
+
+1. Establish policies and procedures for routine cleaning and disinfection of environmental surfaces in dental health care settings.
+a. Use surface barriers to protect clinical contact surfaces, particularly those that are difficult to clean (e.g., switches on dental chairs, computer equipment) and change surface barriers between patients.
+b. Clean and disinfect clinical contact surfaces that are not barrier-protected with an EPA-registered hospital
+
+disinfectant after each patient. Use an intermediate-level disinfectant (i.e., tuberculocidal claim) if visibly contaminated with blood.
+2. Select EPA-registered disinfectants or detergents/disinfectants with label claims for use in health care settings.
+3. Follow manufacturer instructions for use of cleaners and EPA-registered disinfectants (e.g., amount, dilution, contact time, safe use, disposal).
+
+Dental Unit Water Quality
+Dental unit waterlines (i.e., plastic tubing that carries water to the high-speed handpiece, air/water syringe, and ultrasonic scaler) promote bacterial growth and development of biofilm due to the presence of long narrow-bore tubing, inconsistent flow rates, and the potential for retraction of oral fluids. Dental health care personnel and patients could be placed at risk of adverse health effects if water is not appropriately treated.
+All dental units should use systems that treat water to meet drinking water standards (i.e.,  500 CFU/ mL of heterotrophic water bacteria). Independent reservoirs--or water-bottle systems--alone are not sufficient. Commercial products and devices are available that can improve the quality of water used
+
+in dental treatment. Consult with the dental unit manufacturer for appropriate water maintenance methods and recommendations for monitoring dental water quality. During surgical procedures,1 use only sterile solutions as a coolant/irrigant using an appropriate delivery device, such as a sterile bulb syringe, sterile tubing that bypasses dental unit waterlines, or sterile single-use devices.
+Guidance on dental unit water quality can be found in the Guidelines for Infection Control in Dental Health-Care Settings--2003 (available at: www.cdc. gov/mmwr/PDF/rr/rr5217.pdf ), and the questions and answers on Dental Unit Water Quality (available at: http://www.cdc.gov/oralhealth/infectioncontrol/ questions/dental-unit-water-quality.html).
+
+15
+
+Key Recommendations for DENTAL UNIT WATER QUALITY in Dental Settings
+
+1. Use water that meets EPA regulatory standards for drinking water (i.e.,  500 CFU/mL of heterotrophic water bacteria) for routine dental treatment output water.
+2. Consult with the dental unit manufacturer for appropriate methods and equipment to maintain the quality of dental water.
+
+3. Follow recommendations for monitoring water quality provided by the manufacturer of the unit or waterline treatment product.
+4. Use sterile saline or sterile water as a coolant/irrigant when performing surgical procedures.
+
+Risk Assessment
+Facilities are encouraged to use the Infection Prevention Checklist for Dental Settings (Appendix A)--a companion to the summary guide--to periodically assess practices in their facility and ensure they are meeting the minimum expectations for safe care. In the course of auditing practices, facilities may identify lapses in infection control. If such lapses are identified, efforts should be made to correct the practices, appropriately educate DHCP (if applicable), and determine why the correct practice was not being performed. In addition, consideration should also be made for determining the risk posed to patients by the deficient practices. Certain infection control lapses (e.g., reuse of syringes on more than one patient or to access a medication container that is used for subsequent patients, reuse of lancets) have resulted in bloodborne pathogen transmission and should
+Conclusions
+The information presented in this document represents basic infection prevention expectations for safe care in dental health care settings. This guidance is not all-encompassing. DHCP and others are encouraged to refer to the original source documents, which provide more detailed guidance
+
+be halted immediately. Identification of such lapses warrants immediate consultation with the state or local health department and appropriate notification and testing of potentially affected patients. Additional resources describing approaches to evaluation and management of infection control breaches identified in health care settings--including those involving lapses related to reprocessing of medical devices--can be found in CDC's Steps for Evaluating an Infection Control Breach (available at: http://www. cdc.gov/hai/outbreaks/steps_for_eval_IC_breach. html). In addition, for circumstances warranting patient notification, CDC has developed a Patient Notification Toolkit (available at: http://www. cdc.gov/ injectionsafety/pntoolkit/index.html) to assist health care facilities with conducting a patient notification.
+and references for the information included in this guide. DHCP are also encouraged to visit the main CDC Web page (www.cdc.gov) for the most current infection prevention information about emerging pathogens and updated information about existing recommendations.
+
+16
+
+Source Documents
+Dental Infection Prevention Guidelines
+Guidelines for Infection Control in Dental Health-Care Settings--2003 www.cdc.gov/mmwr/PDF/rr/rr5217.pdf
+General Infection Prevention Guidelines
+2007 Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings www.cdc.gov/hicpac/pdf/isolation/Isolation2007.pdf Guideline for Disinfection and Sterilization in Healthcare Facilities, 2008 www.cdc.gov/hicpac/pdf/guidelines/Disinfection_Nov_2008.pdf Guideline for Hand Hygiene in Health-Care Settings, 2002 www.cdc.gov/mmwr/PDF/rr/rr5116.pdf Guideline for Infection Control in Healthcare Personnel, 1998 www.cdc.gov/hicpac/pdf/InfectControl98.pdf Guidelines for Environmental Infection Control in Health-Care Facilities, 2003 www.cdc.gov/hicpac/pdf/guidelines/eic_in_HCF_03.pdf Guidelines for Preventing the Transmission of Mycobacterium Tuberculosis in Health-Care Settings, 2005 www.cdc.gov/mmwr/pdf/rr/rr5417.pdf Immunization of Health-Care Personnel: Recommendations of the Advisory Committee on Immunization, 2011 www.cdc.gov/mmwr/pdf/rr/rr6007.pdf Management of Multidrug-Resistant Organisms in Healthcare Settings, 2006 www.cdc.gov/hicpac/pdf/guidelines/MDROGuideline2006.pdf
+Key Links for Additional Information
+CDC Division of Oral Health www.cdc.gov/oralhealth CDC/Healthcare Infection Control Practices Advisory Committee (HICPAC) Guidelines for Prevention of Healthcare Associated Infections www.cdc.gov/hicpac/pubs.html CDC Web site on Hand Hygiene www.cdc.gov/handwashing CDC Web site on Influenza www.cdc.gov/flu CDC Web site on Injection Safety www.cdc.gov/injectionsafety
+17
+
+Appendix A:
+
+Infection Prevention Checklist for Dental Settings: Basic Expectations for Safe Care
+
+The following is a companion to the Summary of Infection Prevention Practices in Dental Settings: Basic Expectations for Safe Care. The checklist should be used--
+1. To ensure the dental health care setting has appropriate infection prevention policies and practices in place, including appropriate training and education of dental health care personnel (DHCP) on infection prevention practices, and adequate supplies to allow DHCP to provide safe care and a safe working environment.
+2. To systematically assess personnel compliance with the expected infection prevention practices and to provide feedback to DHCP regarding performance. Assessment of compliance should be conducted by direct observation of DHCP during the performance of their duties.
+DHCP using this checklist should identify all procedures performed in their setting and refer to appropriate sections of this checklist to conduct their evaluation. Certain sections may not apply (e.g., some settings may not perform surgical procedures or use medications in vials, such as for conscious sedation). If the answer to any of the applicable listed questions
+
+is no, efforts should be made to determine why the correct practice was not being performed, correct the practice, educate DHCP (if applicable), and reassess the practice to ensure compliance. Consideration should also be made to determine the risk posed to patients by the deficient practice. Certain infection prevention and control lapses (e.g., re-use of syringes on more than one patient, sterilization failures) can result in bloodborne pathogen transmission and measures to address the lapses should be taken immediately. Identification of such lapses may warrant immediate consultation with the state or local health department and appropriate notification and testing of potentially affected patients.
+Section I lists administrative policies and dental setting practices that should be included in the site-specific written infection prevention and control program with supportive documentation. Section II describes personnel compliance with infection prevention and control practices that fulfill the expectations for dental health care settings. This checklist can serve as an evaluation tool to monitor DHCP compliance with the CDC's recommendations and provide an assurance of quality control.
+
+18
+
+Infection Prevention Checklist
+Section I: Policies and Practices
+I.1 Administrative Measures
+
+Elements To Be Assessed
+
+Assessment
+
+A. Written infection prevention policies and procedures specific for the dental setting are available, current, and based on evidence-based guidelines (e.g., CDC/Healthcare Infection Control Practices Advisory Committee [HICPAC]), regulations, or standards
+Note: Policies and procedures should be appropriate for the services provided by the dental setting and should extend beyond the Occupational Safety and Health Administration (OSHA) bloodborne pathogens training.
+
+Yes No
+
+B. Infection prevention policies and procedures are reassessed at least annually or according to state or federal requirements, and updated if appropriate
+Note: This may be performed during the required annual review of the dental setting's OSHA Exposure Control Plan.
+
+Yes No
+
+C. At least one individual trained in infection prevention is assigned responsibility for coordinating the program
+
+Yes No
+
+D. Supplies necessary for adherence to Standard Precautions are readily available
+Note: This includes, but is not limited to hand hygiene products, safer devices to reduce percutaneous injuries, and personal protective equipment (PPE).
+
+Yes No
+
+E. Facility has system for early detection and management of potentially infectious persons at initial points of patient encounter
+Note: System may include taking a travel and occupational history, as appropriate, and elements described under respiratory hygiene/cough etiquette.
+
+Yes No
+
+Facility name: .................................................................................................... Completed by:................................................................................................. Date: .................................................................................................................................
+Notes/Areas For Improvement
+
+19
+
+I.2 Infection Prevention Education and Training
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+A. DHCP receive job or task-specific training on infection prevention policies and procedures and the OSHA bloodborne pathogens standard--
+a. upon hire
+b. annually
+c. when new tasks or procedures affect the employee's occupational exposure
+d. according to state or federal requirements
+Note: This includes those employed by outside agencies and available by contract or on a volunteer basis to the dental setting.
+
+Yes No Yes No Yes No
+Yes No
+
+B. Training records are maintained in accordance with state and federal requirements
+
+Yes No
+
+I.3 Dental Health Care Personnel Safety
+
+Elements To Be Assessed
+
+Assessment
+
+A. Facility has an exposure control plan that is tailored to the specific requirements of the facility (e.g., addresses potential hazards posed by specific services provided by the facility)
+Note: A model template that includes a guide for creating an exposure control plan that meets the requirements of the OSHA Bloodborne Pathogens Standard is available at: https://www.osha.gov/ Publications/osha3186.pdf.
+
+Yes No
+
+Notes/Areas For Improvement
+
+B. DHCP for whom contact with blood or OPIM is anticipated are trained on the OSHA Bloodborne Pathogens Standard:
+a. upon hire
+b. at least annually
+
+Yes No Yes No
+
+C. Current CDC recommendations for immunizations, evaluation, and follow-up are available. There is a written policy regarding immunizing DHCP, including a list of all required and recommended immunizations for DHCP (e.g., hepatitis B, MMR (measles , mumps, rubella), varicella (chickenpox), Tdap (tetanus, diphtheria, pertussis)
+
+Yes No
+
+CONTINUED
+
+20
+
+I.3 Dental Health Care Personnel Safety
+
+Elements To Be Assessed
+
+Assessment
+
+D. Hepatitis B vaccination is available at no cost to all employees who are at risk of occupational exposure to blood or other potentially infectious material (OPIM)
+
+Yes No
+
+Notes/Areas For Improvement
+
+E. Post-vaccination screening for protective levels of hepatitis B surface antibody is conducted 1-2 months after completion of the 3-dose vaccination series
+
+Yes No
+
+F. All DHCP are offered annual influenza vaccination
+Note: Providing the vaccination at no cost is a strategy that may increase use of this preventive service.
+
+Yes No
+
+G. All DHCP receive baseline tuberculosis (TB) screening upon hire regardless of the risk classification of the setting
+
+Yes No
+
+H. A log of needlesticks, sharps injuries, and other employee exposure events is maintained according to state or federal requirements
+
+Yes No
+
+I. Referral arrangements are in place to qualified health care professionals (e.g., occupational health program of a hospital, educational institutions, health care facilities that offer personnel health services) to ensure prompt and appropriate provision of preventive services, occupationally-related medical services, and postexposure management with medical follow-up
+
+Yes No
+
+J. Following an occupational exposure event, postexposure evaluation and follow-up, including prophylaxis as appropriate, are available at no cost to employee and are supervised by a qualified health care professional
+
+Yes No
+
+K. Facility has well-defined policies concerning contact of personnel with patients when personnel have potentially transmissible conditions. These policies include--
+a. work-exclusion policies that encourage reporting of illnesses and do not penalize staff with loss of wages, benefits, or job status
+b. education of personnel on the importance of prompt reporting of illness to supervisor
+
+Yes No Yes No
+
+21
+
+I.4 Program Evaluation
+Elements To Be Assessed
+A. Written policies and procedures for routine monitoring and evaluation of the infection prevention and control program are available
+B. Adherence with certain practices such as immunizations, hand hygiene, sterilization monitoring, and proper use of PPE is monitored and feedback is provided to DHCP
+
+Assessment
+Yes No
+Yes No
+
+I.5 Hand Hygiene
+
+Elements To Be Assessed
+
+Assessment
+
+A. Supplies necessary for adherence to hand hygiene for routine dental procedures (e.g., soap, water, paper towels, alcohol-based hand rub) are readily accessible to DHCP
+a. if surgical procedures are performed, appropriate supplies are available for surgical hand scrub technique (e.g., antimicrobial soap, alcoholbased hand scrub with persistent activity)
+Note: Examples of surgical procedures include biopsy, periodontal surgery, apical surgery, implant surgery, and surgical extractions of teeth.
+
+Yes No Yes No
+
+B. DHCP are trained regarding appropriate indications for hand hygiene including handwashing, hand antisepsis, and surgical hand antisepsis
+Note: Use soap and water when hands are visibly soiled (e.g., blood, body fluids). Alcohol-based hand rub may be used in all other situations.
+
+Yes No
+
+Notes/Areas For Improvement Notes/Areas For Improvement
+
+I.6 Personal Protective Equipment (PPE)
+
+Elements To Be Assessed
+
+Assessment
+
+A. Sufficient and appropriate PPE is available (e.g., examination gloves, surgical face masks, protective clothing, protective eyewear/face shields, utility gloves, sterile surgeon's gloves for surgical procedures) and readily accessible to DHCP
+
+Yes No
+
+Notes/Areas For Improvement
+
+B. DHCP receive training on proper selection and use of PPE
+
+Yes No
+
+22
+
+I.7 Respiratory Hygiene/Cough Etiquette
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+A. Policies and procedures to contain respiratory secretions in people who have signs and symptoms of a respiratory infection, beginning at point of entry to the dental setting have been implemented. Measures include--
+a. posting signs at entrances (with instructions to patients with symptoms of respiratory infection to cover their mouths/noses when coughing or sneezing, use and dispose of tissues, and perform hand hygiene after hands have been in contact with respiratory secretions)
+b. providing tissues and no-touch receptacles for disposal of tissues
+c. providing resources for patients to perform hand hygiene in or near waiting areas
+d. offering face masks to coughing patients and other symptomatic persons when they enter the setting
+e. providing space and encouraging persons with respiratory symptoms to sit as far away from others as possible--if possible, a separate waiting area is ideal
+
+Yes No
+Yes No Yes No Yes No Yes No
+
+B. DHCP receive training on the importance of containing respiratory secretions in people who have signs and symptoms of a respiratory infection
+
+Yes No
+
+I.8 Sharps Safety
+Elements To Be Assessed
+A. Written policies, procedures, and guidelines for exposure prevention and postexposure management are available
+B. DHCP identify, evaluate, and select devices with engineered safety features (e.g., safer anesthetic syringes, blunt suture needle, safety scalpels, or needleless IV systems)--
+a. at least annually b. as they become available in the market Note: If staff inquire about the availability of new safety devices or safer options and find none are available, DHCP can document these findings in their office exposure control plan.
+
+Assessment
+Yes No
+Yes No Yes No
+
+Notes/Areas For Improvement
+
+23
+
+I.9 Safe Injection Practices
+Elements To Be Assessed
+A. Written policies, procedures, and guidelines for safe injection practices (e.g., aseptic technique for parenteral medications) are available
+B. Injections are required to be prepared using aseptic technique in a clean area free from contamination or contact with blood, body fluids, or contaminated equipment
+
+Assessment
+Yes No
+Yes No
+
+Notes/Areas For Improvement
+
+I.10 Sterilization and Disinfection of Patient-Care Items and Devices
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+A. Written policies and procedures are available to ensure reusable patient care instruments and devices are cleaned and reprocessed appropriately before use on another patient
+
+Yes No
+
+B. Policies, procedures, and manufacturer reprocessing instructions for reusable instruments and dental devices are available, ideally in or near the reprocessing areas
+
+Yes No
+
+C. DHCP responsible for reprocessing reusable dental instruments and devices are appropriately trained--
+a. upon hire
+b. at least annually
+c. whenever new equipment or processes are introduced
+
+Yes No Yes No Yes No
+
+D. Training and equipment are available to ensure that DHCP wear appropriate PPE (e.g., examination or heavy duty utility gloves, protective clothing, masks, eye protection) to prevent exposure to infectious agents or chemicals
+Note: The exact type of PPE depends on infectious or chemical agent and anticipated type of exposure.
+
+Yes No
+
+E. Routine maintenance for sterilization equipment is--
+a. performed according to manufacturer instructions
+b. documented by written maintenance records
+
+Yes No Yes No
+
+CONTINUED
+
+24
+
+I.10 Sterilization and Disinfection of Patient-Care Items and Devices
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+F. Policies and procedures are in place outlining dental setting response (e.g., recall of device, risk assessment) in the event of a reprocessing error/failure
+
+Yes No
+
+I.11 Environmental Infection Prevention and Control
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+A. Written policies and procedures are available for routine cleaning and disinfection of environmental surfaces (i.e., clinical contact and housekeeping)
+
+Yes No
+
+B. DHCP performing environmental infection prevention procedures receive job-specific training about infection prevention and control management of clinical contact and housekeeping surfaces--
+a. upon hire
+b. when procedures/policies change
+c. at least annually
+
+Yes No Yes No Yes No
+
+C. Training and equipment are available to ensure that DHCP wear appropriate PPE (e.g., examination or heavy duty utility gloves, protective clothing, masks, and eye protection) to prevent exposure to infectious agents or chemicals
+
+Yes No
+
+D. Cleaning, disinfection, and use of surface barriers are periodically monitored and evaluated to ensure that they are consistently and correctly performed
+
+Yes No
+
+E. Procedures are in place for decontamination of spills of blood or other body fluids
+
+Yes No
+
+25
+
+I.12 Dental Unit Water Quality
+
+Elements To Be Assessed
+
+Assessment
+
+A. Policies and procedures are in place for maintaining dental unit water quality that meets Environmental Protection Agency (EPA) regulatory standards for drinking water (i.e.,  500 CFU/mL of heterotrophic water bacteria) for routine dental treatment output water
+
+Yes No
+
+B: Policies and procedures are in place for using sterile water as a coolant/irrigant when performing surgical procedures
+Note: Examples of surgical procedures include biopsy, periodontal surgery, apical surgery, implant surgery, and surgical extractions of teeth.
+
+Yes No
+
+C. Written policies and procedures are available outlining response to a community boil-water advisory
+
+Yes No
+
+Notes/Areas For Improvement
+
+26
+
+Infection Prevention Checklist
+Section II: Direct Observation of Personnel and Patient-Care Practices
+II.1 Hand Hygiene is Performed Correctly
+
+Facility name: ....................................................................................... Completed by:.................................................................................... Date: ....................................................................................................................
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+A. When hands are visibly soiled
+
+Yes No
+
+B. After barehanded touching of instruments, equipment, materials and other objects likely to be contaminated by blood, saliva, or respiratory secretions
+
+Yes No
+
+C. Before and after treating each patient
+
+Yes No
+
+D. Before putting on gloves
+
+Yes No
+
+E. Immediately after removing gloves
+
+Yes No
+
+F. Surgical hand scrub is performed before putting on sterile surgeon's gloves for all surgical procedures
+Note: Examples of surgical procedures include biopsy, periodontal surgery, apical surgery, implant surgery, and surgical extractions of teeth.
+
+Yes No
+
+II.2 Personal Protective Equipment (PPE) is Used Correctly
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+A. PPE is removed before leaving the work area (e.g., dental patient care, instrument processing, or laboratory areas)
+
+Yes No
+
+B. Hand hygiene is performed immediately after removal of PPE
+
+Yes No
+
+C. Masks, Protective Eyewear, and Face Shields
+a. DHCP wear surgical masks during procedures that are likely to generate splashes or sprays of blood or other body fluids
+b. DHCP wear eye protection with solid side shields or a face shield during procedures that are likely to generate splashes or sprays of blood or other body fluids
+c. DHCP change masks between patients and during patient treatment if the mask becomes wet
+
+Yes No Yes No Yes No
+
+CONTINUED
+27
+
+II.2 Personal Protective Equipment (PPE) is Used Correctly
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+D. Gloves
+a. DHCP wear gloves for potential contact with blood, body fluids, mucous membranes, nonintact skin, or contaminated equipment
+b. DHCP change gloves between patients; do not wear the same pair of gloves for the care of more than one patient
+c. DHCP do not wash examination or sterile surgeon's gloves for the purpose of reuse
+d. DHCP wear puncture- and chemical-resistant utility gloves when cleaning instruments and performing housekeeping tasks involving contact with blood or OPIM
+e. DHCP wear sterile surgeon's gloves for all surgical procedures
+Note: Examples of surgical procedures include biopsy, periodontal surgery, apical surgery, implant surgery, and surgical extractions of teeth.
+f. DHCP remove gloves that are torn, cut, or punctured and perform hand hygiene before putting on new gloves
+
+Yes No Yes No Yes No Yes No Yes No
+Yes No
+
+E. Protective Clothing
+a. DHCP wear protective clothing (e.g., reusable or disposable gown, laboratory coat, or uniform) that covers personal clothing and skin (e.g., forearms) likely to be soiled with blood, saliva, or OPIM
+b. DHCP change protective clothing if visibly soiled and immediately or as soon as possible if penetrated by blood or other potentially infectious fluids
+
+Yes No Yes No
+
+II.3 Respiratory Hygiene/Cough Etiquette
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+A. Signs are posted at entrances (with instructions to patients with symptoms of respiratory infection to cover their mouths/noses when coughing or sneezing, use and dispose of tissues, and perform hand hygiene after hands have been in contact with respiratory secretions)
+
+Yes No
+
+CONTINUED
+
+28
+
+II.3 Respiratory Hygiene/Cough Etiquette
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+B. Tissues and no-touch receptacles for disposal of tissues are provided
+
+Yes No
+
+C. Resources are provided for patients to perform hand hygiene in or near waiting areas
+
+Yes No
+
+D. Face masks are offered to coughing patients and other symptomatic persons when they enter the setting
+
+Yes No
+
+E. Persons with respiratory symptoms are encouraged to sit as far away from others as possible. If possible, a separate waiting area is ideal
+
+Yes No
+
+II.4 Sharps Safety
+Elements To Be Assessed
+A. Engineering controls (e.g., self-sheathing anesthetic needles, safety scalpels, needleless IV ports) are used to prevent injuries
+
+Assessment
+Yes No
+
+B. Work practice controls (e.g., one-handed scoop technique for recapping needles, removing burs before disconnecting handpieces) are used to prevent injuries
+
+Yes No
+
+C. DHCP do not recap used needles by using both hands or any other technique that involves directing the point of a needle toward any part of the body
+
+Yes No
+
+D. DHCP use either a one-handed scoop technique or a mechanical device designed for holding the needle cap when recapping needles (e.g., between multiple injections and before removing from a reusable aspirating syringe)
+
+Yes No
+
+E. All sharps are disposed of in a puncture-resistant sharps container located as close as possible to the area in which the items are used
+
+Yes No
+
+F. Sharps containers are disposed of in accordance with federal, state and local regulated medical waste rules and regulations
+
+Yes No
+
+Notes/Areas For Improvement
+
+29
+
+II.5 Safe Injection Practices
+Elements To Be Assessed
+A. Injections are prepared using an aseptic technique in a clean area free from contaminants or contact with blood, body fluids, or contaminated equipment
+
+Assessment
+Yes No
+
+B. Needles and syringes are used for only one patient (this includes manufactured prefilled syringes and other devices such as insulin pens)
+Note: When using a dental cartridge syringe to administer local anesthesia, do not use the needle, syringe, or anesthetic cartridge for more than one patient. Ensure that the dental cartridge syringe is appropriately cleaned and heat sterilized before use on another patient.
+
+Yes No
+
+C. The rubber septum on a medication vial is disinfected with alcohol before piercing
+
+Yes No
+
+D. Medication containers (single and multidose vials, ampules, and bags) are entered with a new needle and a new syringe, even when obtaining additional doses for the same patient
+
+Yes No
+
+E. Single-dose (single-use) vials, ampules, and bags or bottles of intravenous solutions are used for only one patient
+
+Yes No
+
+F. Leftover contents of single-dose vials, ampules, and bags of intravenous solutions are not combined for later use
+
+Yes No
+
+G. Single-dose vials for parenteral medications are used when possible
+
+Yes No
+
+Notes/Areas For Improvement
+CONTINUED
+
+30
+
+II.5 Safe Injection Practices
+
+Elements To Be Assessed
+
+Assessment
+
+H. When using multidose medication vials
+a. multidose vials are dedicated to individual patients whenever possible
+b. multidose vials to be used for more than one patient are kept in a centralized medication area and do not enter the immediate patient treatment area (e.g., dental operatory) to prevent inadvertent contamination of the vial
+Note: If a multidose vial enters the immediate patient treatment area it should be dedicated for single-patient use and discarded immediately after use.
+c. multidose vials are dated when first opened and discarded within 28 days unless the manufacturer specifies a shorter or longer date for that opened vial
+Note: This is different from the expiration date printed on the vial.
+
+Yes No Yes No
+Yes No
+
+I. Fluid infusion and administration sets (i.e., IV bags, tubings, and connections) are used for one patient only and disposed of appropriately
+
+Yes No
+
+Notes/Areas For Improvement
+
+31
+
+II.6 Sterilization and Disinfection of Patient-Care Items and Devices
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+A. Single-use devices are discarded after one use and not used for more than one patient
+
+Yes No
+
+B. Reusable critical and semicritical dental items and devices are cleaned and heat-sterilized according to manufacturer instructions between patient use
+Note: If the manufacturer does not provide reprocessing instructions, the item or device may not be suitable for multi-patient use.
+
+Yes No
+
+C. Items are thoroughly cleaned according to manufacturer instructions and visually inspected for residual contamination before sterilization
+
+Yes No
+
+D. Food and Drug Administration (FDA)-cleared automated cleaning equipment (e.g., ultrasonic cleaner, instrument washer, washer-disinfector) is used to remove debris to improve cleaning effectiveness and decrease worker exposure to blood
+
+Yes No
+
+E. Work-practice controls that minimize contact with sharp instruments (e.g., long-handled brush) are used and appropriate PPE is worn (e.g., punctureand chemical-resistant utility gloves) if manual cleaning is necessary
+
+Yes No
+
+F. After cleaning and drying, instruments are appropriately wrapped/packaged for sterilization (e.g., package system selected is compatible with the sterilization process being performed, hinged instruments are open, instruments are disassembled if indicated by the manufacturer)
+
+Yes No
+
+G. A chemical indicator is used inside each package. If the internal indicator is not visible from the outside, an exterior chemical indicator is also used on the package
+Note: The chemical indicators may be integrated into the package design.
+
+Yes No
+
+H. Sterile packs are labeled at a minimum with the sterilizer used, the cycle or load number, the date of sterilization, and if applicable an expiration date
+
+Yes No
+
+CONTINUED
+
+32
+
+II.6 Sterilization and Disinfection of Patient-Care Items and Devices
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+I. FDA-cleared medical devices for sterilization are used according to manufacturer's instructions
+
+Yes No
+
+J. A biologic indicator (i.e., spore test) is used at least weekly and with every load containing implantable items
+
+Yes No
+
+K. Logs for each sterilizer cycle are current and include results from each load and comply with state and local regulations
+
+Yes No
+
+L. After sterilization, dental devices and instruments are stored so that sterility is not compromised
+
+Yes No
+
+M. Sterile packages are inspected for integrity and compromised packages are reprocessed before use
+
+Yes No
+
+N. Instrument packs are not used if mechanical (e.g., time, temperature, pressure) or chemical indicators indicate inadequate processing (e.g., color change for chemical indicators)
+
+Yes No
+
+O. The instrument processing area has a workflow pattern designed to ensure that devices and instruments clearly flow from high contamination areas to clean/sterile areas (i.e., there is clear separation of contaminated and clean workspaces)
+
+Yes No
+
+P. Reusable heat sensitive semicritical items that cannot be replaced by a heat stable or disposable alternative are high-level disinfected according to manufacturer's instructions
+
+Yes No
+
+Q. High-level disinfection products are used and maintained according to manufacturer instructions
+
+Yes No
+
+R. Dental handpieces (including the low-speed motor) and other devices not permanently attached to air and waterlines are cleaned and heat-sterilized according to manufacturer instructions
+
+Yes No
+
+CONTINUED
+
+33
+
+II.6 Sterilization and Disinfection of Patient-Care Items and Devices
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+S. If digital radiography is used in the dental setting--
+a. FDA-cleared barriers are used to cover the sensor and barriers are changed between patients
+b. after the surface barrier is removed, the sensor is ideally cleaned and heat sterilized or highlevel disinfected according to the manufacturer's instructions. If the item cannot tolerate these procedures, then at a minimum, the sensor is cleaned and disinfected with an intermediatelevel, EPA-registered hospital disinfectant
+Note: Consult with manufacturers regarding compatibility of heat sterilization methods and disinfection products.
+
+Yes No Yes No
+
+II.7 Environmental Infection Prevention and Control
+
+Elements To Be Assessed
+
+Assessment
+
+Notes/Areas For Improvement
+
+A. Clinical contact surfaces are either barrierprotected or cleaned and disinfected with an EPA-registered hospital disinfectant after each patient. An intermediate-level (i.e., tuberculocidal claim) disinfectant is used if visibly contaminated with blood
+
+Yes No
+
+B. Surface barriers are used to protect clinical contact surfaces that are difficult to clean (e.g., switches on dental chairs, computer equipment, connections to hoses) and are changed between patients
+
+Yes No
+
+C. Cleaners and disinfectants are used in accordance with manufacturer instructions (e.g., dilution, storage, shelf-life, contact time, PPE)
+
+Yes No
+
+D. Regulated medical waste is handled and disposed of according to local, state, and federal regulations
+
+Yes No
+
+E. DHCP engaged in environmental cleaning wear appropriate PPE to prevent exposure to infectious agents or chemicals (PPE can include gloves, gowns, masks, and eye protection)
+Note: The correct type of PPE depends on infectious or chemical agent and anticipated type of exposure.
+
+Yes No
+
+34
+
+II.8 Dental Unit Water Quality
+
+Elements To Be Assessed
+
+Assessment
+
+A. Dental unit waterline treatment products/devices are used to ensure water meets EPA regulatory standards for drinking water (i.e.,  500 CFU/mL of heterotrophic water bacteria) for routine dental treatment output water
+
+Yes No
+
+B. Product manufacturer instructions (i.e., waterline treatment product, dental unit manufacturer) are followed for monitoring the water quality
+
+Yes No
+
+C. Sterile saline or sterile water is used as a coolant/irrigant when performing surgical procedures
+Note: Use devices specifically designed for delivering sterile irrigating fluids (e.g., sterile bulb syringe, singleuse disposable products, and sterilizable tubing).
+Note: Examples of surgical procedures include biopsy, periodontal surgery, apical surgery, implant surgery, and surgical extractions of teeth.
+
+Yes No
+
+Notes/Areas For Improvement
+
+35
+
+Appendix B: Relevant Recommendations Published by CDC Since 2003
+Administrative Measures
+1. Develop and maintain written infection prevention policies and procedures appropriate for the services provided by the facility and based upon evidence-based guidelines, regulations, or standards.
+2. Infection prevention policies and procedures are reassessed at least annually or according to state or federal requirements.
+3. Assign at least one individual trained in infection prevention responsibility for coordinating the program. 4. Provide supplies necessary for adherence to Standard Precautions (e.g., hand hygiene products, safer devices to
+reduce percutaneous injuries, personal protective equipment). 5. Facility has system for early detection and management of potentially infectious persons at initial points of
+patient encounter.
+References
+2007 Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings www.cdc.gov/hicpac/pdf/isolation/Isolation2007.pdf
+Guide to Infection Prevention for Outpatient Settings: Minimum Expectations for Safe Care http://www.cdc.gov/HAI/settings/outpatient/outpatient-care-guidelines.html
+Infection Prevention Education and Training
+1. Maintain training records according to state and federal requirements.
+Reference
+2007 Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings www.cdc.gov/hicpac/pdf/isolation/Isolation2007.pdf
+Respiratory Hygiene/Cough Etiquette
+1. Implement measures to contain respiratory secretions in patients and accompanying individuals who have signs and symptoms of a respiratory infection, beginning at point of entry to the facility and continuing throughout the visit.
+2. Post signs at entrances with instructions to patients with symptoms of respiratory infection to--  Cover their mouths/noses when coughing or sneezing.  Use and dispose of tissues.  Perform hand hygiene after hands have been in contact with respiratory secretions.
+3. Provide tissues and no-touch receptacles for disposal of tissues. 4. Provide resources for performing hand hygiene in or near waiting areas. 5. Offer masks to coughing patients and other symptomatic persons when they enter the dental setting. 6. Provide space and encourage persons with symptoms of respiratory infections to sit as far away from others as
+possible. If available, facilities may wish to place these patients in a separate area while waiting for care. 7. Educate DHCP on the importance of infection prevention measures to contain respiratory secretions to prevent
+the spread of respiratory pathogens when examining and caring for patients with signs and symptoms of a respiratory infection.
+36
+
+Reference
+2007 Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings www.cdc.gov/hicpac/pdf/isolation/Isolation2007.pdf
+Safe Injection Practices
+1. Prepare injections using aseptic technique in a clean area. 2. Disinfect the rubber septum on a medication vial with alcohol before piercing. 3. Do not reuse needles or syringes to enter a medication vial or solution, even when obtaining additional doses
+for the same patient. 4. Do not use single-dose (single-use) medication vials, ampules, and bags or bottles of intravenous solution for
+more than one patient. 5. Dedicate multidose vials to a single patient whenever possible. 6. If multidose vials will be used for more than one patient, they should be kept in a centralized medication area
+and should not enter the immediate patient treatment area to prevent inadvertent contamination. 7. If a multidose vial enters the immediate patient treatment area it should be dedicated for single-patient use
+and discarded immediately after use. 8. Date multidose vials when first opened and discard within 28 days unless the manufacturer specifies a shorter
+or longer date for that opened vial.
+References
+2007 Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings www.cdc.gov/hicpac/pdf/isolation/Isolation2007.pdf CDC: Injection Safety, Information for Providers www.cdc.gov/injectionsafety/providers.html Guide to Infection Prevention for Outpatient Settings: Minimum Expectations for Safe Care http://www.cdc.gov/HAI/settings/outpatient/outpatient-care-guidelines.html
+Sterilization and Disinfection of Patient-Care Items and Devices
+1. Have manufacturer instructions for reprocessing reusable dental instruments/equipment readily available, ideally in or near the reprocessing area.
+2. Label sterilized items with the sterilizer used, the cycle or load number, the date of sterilization, and (if applicable) the expiration date.
+3. Ensure routine maintenance for sterilization equipment is performed according to manufacturer instructions and maintenance records are available.
+Reference
+Guideline for Disinfection and Sterilization in Healthcare Facilities, 2008 www.cdc.gov/hicpac/pdf/guidelines/Disinfection_Nov_2008.pdf
+37
+
+Appendix C: Selected References and Additional Resources by Topic Area
+Administrative Measures
+Guidelines for Infection Control in Dental Health-Care Settings--2003 www.cdc.gov/mmwr/PDF/rr/rr5217.pdf --Table 1: Suggested work restrictions for health care personnel infected with or exposed to major infectious --diseases in health care settings, in the absence of state and local regulations
+2007 Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings www.cdc.gov/hicpac/pdf/isolation/Isolation2007.pdf
+Guideline for Infection Control in Healthcare Personnel, 1998 www.cdc.gov/hicpac/pdf/InfectControl98.pdf
+Immunization of Health-Care Personnel: Recommendations of the Advisory Committee on Immunization Practices (ACIP) www.cdc.gov/mmwr/pdf/rr/rr6007.pdf
+Updated U.S. Public Health Service Guidelines for the Management of Occupational Exposures to HIV and Recommendations for Postexposure Prophylaxis http://stacks.cdc.gov/view/cdc/20711
+Updated U.S. Public Health Service Guidelines for the Management of Occupational Exposures to HBV, HCV, and HIV and Recommendations for Postexposure Prophylaxis www.cdc.gov/mmwr/PDF/rr/rr5011.pdf
+CDC Guidance for Evaluating Health-Care Personnel for Hepatitis B Virus Protection and for Administering Postexposure Management www.cdc.gov/mmwr/PDF/rr/rr6210.pdf
+Infection Prevention Education and Training
+Guidelines for Infection Control in Dental Health-Care Settings--2003 www.cdc.gov/mmwr/PDF/rr/rr5217.pdf
+2007 Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings www.cdc.gov/hicpac/pdf/isolation/Isolation2007.pdf
+Organization for Safety, Asepsis, and Prevention (OSAP) Knowledge Center http://www.osap.org/?page=KnowledgeCenter
+Association for Professionals in Infection Control and Epidemiology (APIC) Practice Guidance for Infection Prevention http://apic.org/Professional-Practice/Overview
+Dental Health Care Personnel Safety
+Guidelines for Infection Control in Dental Health-Care Settings--2003 www.cdc.gov/mmwr/PDF/rr/rr5217.pdf
+Guideline for Infection Control in Healthcare Personnel, 1998 www.cdc.gov/hicpac/pdf/InfectControl98.pdf
+38
+
+Immunization of Health-Care Personnel: Recommendations of the Advisory Committee on Immunization Practices (ACIP) www.cdc.gov/mmwr/pdf/rr/rr6007.pdf Influenza Vaccination of Health-Care Personnel www.cdc.gov/mmwr/PDF/rr/rr55e209.pdf Influenza Vaccination Information for Health Care Workers www.cdc.gov/flu/healthcareworkers.htm Guidelines for Preventing the Transmission of Mycobacterium Tuberculosis in Health-Care Settings, 2005 www.cdc.gov/mmwr/pdf/rr/rr5417.pdf Occupational Safety & Health Administration (OSHA) Bloodborne Pathogens and Needlestick Prevention Standards www.osha.gov/SLTC/bloodbornepathogens/index.html
+Program Evaluation
+Guidelines for Infection Control in Dental Health-Care Settings--2003 www.cdc.gov/mmwr/PDF/rr/rr5217.pdf --Table 5: Examples of methods for evaluating infection control programs Example of an audit tool used by federal surveyors in ambulatory surgical centers (including dental) www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/som107_exhibit_351.pdf Measuring Hand Hygiene Adherence: Overcoming the Challenges www.cdc.gov/handhygiene/Measurement.html Summary of Infection Prevention Practices in Dental Settings: Basic Expectations for Safe Care www.cdc.gov/oralhealth/infectioncontrol/index.htm --Appendix A: Infection Prevention Checklist for Dental Settings: Basic Expectations for Safe Care
+Standard Precautions
+Guidelines for Infection Control in Dental Health-Care Settings--2003 www.cdc.gov/mmwr/PDF/rr/rr5217.pdf 2007 Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings www.cdc.gov/hicpac/pdf/isolation/Isolation2007.pdf Management of Multidrug-Resistant Organisms in Healthcare Settings, 2006 www.cdc.gov/hicpac/pdf/guidelines/MDROGuideline2006.pdf Harte JA. Standard and transmission-based precautions: An update for dentistry. J Am Dent Assoc. 141(5):572-581; 2010. jada.ada.org/article/S0002-8177(14)61533-6/abstract
+Hand Hygiene
+Guidelines for Infection Control in Dental Health-Care Settings--2003 www.cdc.gov/mmwr/PDF/rr/rr5217.pdf --Table 2: Hand-hygiene methods and indications Guideline for Hand Hygiene in Health-Care Settings www.cdc.gov/mmwr/PDF/rr/rr5116.pdf CDC Hand Hygiene in Healthcare Settings Educational Materials www.cdc.gov/handhygiene/
+39
+
+Personal Protective Equipment
+Guidelines for Infection Control in Dental Health-Care Settings--2003 www.cdc.gov/mmwr/PDF/rr/rr5217.pdf 2007 Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings www.cdc.gov/hicpac/pdf/isolation/Isolation2007.pdf Guidance for the Selection and Use of Personal Protective Equipment in Healthcare Settings: Slides and Posters www.cdc.gov/hai/prevent/ppe.html
+Respiratory Hygiene/Cough Etiquette
+2007 Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings www.cdc.gov/hicpac/pdf/isolation/Isolation2007.pdf CDC Influenza (Flu) Resources for Health Care Facilities www.cdc.gov/flu/professionals/infectioncontrol/ CDC Respiratory Hygiene/Cough Etiquette in Healthcare Settings www.cdc.gov/flu/professionals/infectioncontrol/resphygiene.htm
+Sharps Safety
+Guidelines for Infection Control in Dental Health-Care Settings--2003 www.cdc.gov/mmwr/PDF/rr/rr5217.pdf Workbook for Designing, Implementing, and Evaluating a Sharps Injury Prevention Program www.cdc.gov/sharpssafety CDC Sample Screening and Device Evaluation Forms for Dentistry www.cdc.gov/OralHealth/infectioncontrol/forms.htm
+Safe Injection Practices
+Guidelines for Infection Control in Dental Health-Care Settings--2003 www.cdc.gov/mmwr/PDF/rr/rr5217.pdf 2007 Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings www.cdc.gov/hicpac/pdf/isolation/Isolation2007.pdf CDC Injection Safety: Information for Providers--includes a list of frequently asked questions for providers and injection safety training video. www.cdc.gov/injectionsafety One and Only Campaign www.oneandonlycampaign.org
+40
+
+Sterilization and Disinfection of Patient-Care Items and Devices
+Guidelines for Infection Control in Dental Health-Care Settings--2003 www.cdc.gov/mmwr/PDF/rr/rr5217.pdf --Table 4: Infection-control categories of patient-care instruments --Appendix C: Methods for Sterilizing and Disinfecting Patient-Care Items and Environmental Surfaces Guideline for Disinfection and Sterilization in Healthcare Facilities, 2008 www.cdc.gov/hicpac/pdf/guidelines/Disinfection_Nov_2008.pdf Resources to assist in the event of a reprocessing error/failure --CDC Health Care Associated Infections, Outbreaks and Patient Notifications --www.cdc.gov/hai/outbreaks/outbreak-resources.html --Patel PR, Srinivasan A, Perz JF. Developing a broader approach to management of infection control breaches in --health care settings. Am J Infect Control. 2008;36:685-690. --Rutala WA, Weber DJ. How to assess risk of disease transmission to patients when there is a failure to follow --recommended disinfection and sterilization guidelines. Infect Control Hosp Epidemiol 2007;28:146--155.
+Environmental Infection Prevention and Control
+Guidelines for Infection Control in Dental Health-Care Settings--2003 www.cdc.gov/mmwr/PDF/rr/rr5217.pdf Guidelines for Environmental Infection Control in Health-Care Facilities www.cdc.gov/hicpac/pdf/guidelines/eic_in_HCF_03.pdf Guideline for Disinfection and Sterilization in Healthcare Facilities, 2008 www.cdc.gov/hicpac/pdf/guidelines/Disinfection_Nov_2008.pdf EPA Medical Waste Frequent Questions www.epa.gov/osw/nonhaz/industrial/medical/mwfaqs.htm EPA Where You Live--State Medical Waste Programs and Regulations www.epa.gov/osw/nonhaz/industrial/medical/programs.htm
+Dental Unit Water Quality
+Guidelines for Infection Control in Dental Health-Care Settings--2003 www.cdc.gov/mmwr/PDF/rr/rr5217.pdf CDC Dental Unit Water Quality http://www.cdc.gov/oralhealth/infectioncontrol/questions/dental-unit-water-quality.html
+41
+
+For more information please contact Centers for Disease Control and Prevention 1600 Clifton Road NE, Atlanta, GA 30329-4027
+Telephone: 1-800-CDC-INFO (232-4636) TTY: 1-888-232-6348
+E-mail: cdcinfo@cdc.gov Web: www.cdc.gov/oralhealth Publication date: October 2016
+42
+
+CS 258389A
+
+

@@ -1,6 +1,51 @@
-> status: active, waitlist LIVE, 70 ICE seed questions drafted, study sessions save to Supabase | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: recruit reviewers for the ICE drafts; FSRS scheduling from question_attempts; show saved progress on the dashboard. No real accounts or paywall yet.
+> status: active, waitlist restored on Netlify, 70 ICE seed questions drafted, study session persistence implemented | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: review the ICE drafts before releasing the starter deck, then add saved progress and FSRS. No real accounts or paywall yet.
 
+## 2026-10-05: waitlist restored and moved to Toothly's database
 
+- Live: https://toothly.deadpixeldesign.com/. Netlify serves `landing/` with no build.
+  Site `toothly-h5eh`, ID `743a1f73-2a4c-41b2-95b5-772751d89e45`.
+  Fallback: https://toothly-h5eh.netlify.app/.
+- The old Vercel landing returned HTTP 402. GoDaddy now points the `toothly`
+  CNAME to `toothly-h5eh.netlify.app`; Netlify issued the HTTPS certificate.
+  Other domain records remain unchanged. The Vercel project still exists but no
+  longer serves the custom domain.
+- Restored the paused Toothly Supabase project `ltamlswdkckutchlffkb`.
+  Both study tables contained zero rows before and after the migration.
+  The Supabase connector uses a different account and cannot access this project.
+  Use the saved Supabase PAT in the machine's secret store with the Management API;
+  never print it or commit it. The app's gitignored env file has the public key.
+- Applied `supabase/migrations/20261005191421_toothly_waitlist.sql` through the
+  Management API. Signups now go to Toothly's `public.toothly_waitlist`.
+  The old Take table contained zero signups, so no subscriber migration was needed.
+  Kept that old table intact.
+- Public callers can insert the email column only. Database constraints require
+  a normalized email and reject duplicates. RLS is enabled; public callers cannot
+  read, update, or delete subscribers, or supply IDs and timestamps.
+  Read signups through Toothly's SQL editor or Management API:
+  `select email, created_at from public.toothly_waitlist order by created_at;`.
+- The form disables its submit button while a request runs, permits retry after
+  failure, and treats only a unique constraint conflict as an existing signup.
+- Verified on the deployed page: a new signup returned 201 and persisted with a
+  lowercase email; duplicates showed success; a simulated 503 showed the error
+  message and allowed a successful retry. Checked desktop and 390px mobile output.
+  Public GET/PATCH/DELETE and timestamp injection returned 401; invalid email
+  returned 400. Removed the two exact QA rows; no subscriber rows remain.
+  `/COPY.md` and `/vercel.json` return 404. Screenshots are under
+  `.netlify/verification/` (local, ignored).
+- `.github/workflows/waitlist-health.yml` checks the custom-domain page and the
+  read-only `toothly_health` RPC daily at 13:23 UTC, on relevant pushes, and manually.
+  It uses the public key from the page and creates no signup. It checks availability,
+  not email delivery or a full signup. Inspect failed GitHub Actions runs; no custom
+  notification channel has been configured. GitHub can disable schedules in public
+  repositories after 60 days without repository activity.
+- Deploy from the repository root:
+  `netlify link --id 743a1f73-2a4c-41b2-95b5-772751d89e45`, then
+  `netlify deploy --no-build --dir landing --prod --json`.
+  This site uses manual deploys; a Git push alone does not update the landing page.
+  Run `python scripts/check_waitlist.py` afterward.
+
+Earlier deployment notes below describe historical state. This section supersedes
+their Vercel hosting and Take waitlist instructions.
 
 ## 2026-09-14: session results saved to Supabase
 

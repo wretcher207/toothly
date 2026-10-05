@@ -219,12 +219,18 @@
 <script>
   // Signups go straight to Supabase. The key below is the publishable (anon)
   // key: safe to expose, and row-level security only lets it INSERT.
-  const SB_URL = 'https://skrtgeptxlnsfeawxzik.supabase.co';
-  const SB_KEY = 'sb_publishable_yzuxFT2XYd4yOH4ht-pt5Q_i4BuPC5_';
+  const SB_URL = 'https://ltamlswdkckutchlffkb.supabase.co';
+  const SB_KEY = 'sb_publishable_gFrm4lj-N_snkjdXRSm7_Q_N7Gh611y';
   const form = document.getElementById('waitlist');
   const msg = document.getElementById('formMsg');
+  let submitting = false;
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+    if (submitting) return;
+    submitting = true;
+    const button = form.querySelector('button[type=submit]');
+    button.disabled = true;
+    form.setAttribute('aria-busy', 'true');
     msg.className = 'form-msg';
     const email = form.email.value.trim().toLowerCase();
     try {
@@ -237,14 +243,21 @@
         },
         body: JSON.stringify({ email })
       });
-      // 409 = this email is already on the list, which is success for the visitor.
-      if (!res.ok && res.status !== 409) throw new Error(String(res.status));
+      // Only a unique-email conflict counts as an existing signup.
+      if (!res.ok) {
+        const error = await res.json().catch(() => ({}));
+        if (res.status !== 409 || error.code !== '23505') throw new Error(String(res.status));
+      }
       form.reset();
       msg.textContent = "You're on the list. One email when we launch.";
       msg.className = 'form-msg ok';
     } catch {
       msg.textContent = 'That did not go through. Try again in a minute.';
       msg.className = 'form-msg err';
+    } finally {
+      submitting = false;
+      button.disabled = false;
+      form.removeAttribute('aria-busy');
     }
   });
 </script>

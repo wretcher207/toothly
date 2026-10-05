@@ -64,3 +64,5 @@ coverage/
 
 # Local agent state
 .handoff-draft.md
+.netlify/
+supabase/.temp/

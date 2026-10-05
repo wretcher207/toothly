@@ -16,6 +16,9 @@
   never print it or commit it. The app's gitignored env file has the public key.
 - Applied `supabase/migrations/20261005191421_toothly_waitlist.sql` through the
   Management API. Signups now go to Toothly's `public.toothly_waitlist`.
+  Aligned its remote migration-history version with the CLI-created local filename.
+  The older study-results migration predates recorded migration history. Do not run
+  a blanket `db push` until its existing schema has been baselined in that history.
   The old Take table contained zero signups, so no subscriber migration was needed.
   Kept that old table intact.
 - Public callers can insert the email column only. Database constraints require
@@ -43,6 +46,8 @@
   `netlify deploy --no-build --dir landing --prod --json`.
   This site uses manual deploys; a Git push alone does not update the landing page.
   Run `python scripts/check_waitlist.py` afterward.
+- GitHub's first health run passed:
+  https://github.com/wretcher207/toothly/actions/runs/37363383949.
 
 Earlier deployment notes below describe historical state. This section supersedes
 their Vercel hosting and Take waitlist instructions.

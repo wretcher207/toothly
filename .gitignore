@@ -66,3 +66,7 @@ coverage/
 .handoff-draft.md
 .netlify/
 supabase/.temp/
+
+# Local reviewer worksheets and Python caches
+.review/
+__pycache__/

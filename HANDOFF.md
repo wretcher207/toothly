@@ -1,4 +1,47 @@
-> status: active, waitlist restored on Netlify, 70 ICE seed questions drafted, study session persistence implemented | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: review the ICE drafts before releasing the starter deck, then add saved progress and FSRS. No real accounts or paywall yet.
+> status: active, waitlist healthy, local ICE review tools ready, 70 drafts await clinical review; study session saves implemented | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: David chooses reviewers and approves outreach; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
+
+## 2026-10-05: ICE review preparation (local, uncommitted)
+
+- Verified the completed restoration at `9023160` (following `a75e001`).
+  `python scripts/check_waitlist.py` passed against the live landing and database.
+  GitHub run `37363383949` completed with success. The repository was clean on
+  `main`, matching `origin/main`, with one registered worktree. No separate current
+  phase plan exists; the top handoff and `CONTENT_TAXONOMY.md` specify ICE review next.
+  The root README still described the old COA scaffold; this change corrects it.
+- All 70 ICE questions remain `draft`, with no named reviewers. Session saving
+  already exists in `app/lib/results.ts`; do not rebuild it as a new phase.
+- Added `scripts/ice_review.py` and the double-click
+  `scripts/prepare-ice-review.bat`. Export creates a new offline packet containing
+  questions, source-order choices, draft keys, explanations, citations, source
+  quotes, source copies, a CSV worksheet, and content fingerprints. The nine
+  concerns from the September 14 handoff appear first. Their notes live in
+  `content/review/ice-priorities.json`.
+- Export refuses an existing output directory. Feedback checks reject duplicate,
+  missing, or unknown rows, invalid decisions, unnamed reviewers, invalid dates,
+  incomplete approval checks, and stale question or source text. Checking feedback
+  never edits question status. `--require-complete` also rejects pending rows.
+  These checks verify format and versions; a human must establish clinical accuracy
+  and reviewer qualifications.
+- Hardened `scripts/verify_questions.py`: quoted globs work in PowerShell, empty
+  inputs fail, malformed records report errors, and status/reviewer metadata must
+  match the documented schema. No clinical content or app design changed.
+- Verification: 18 command-level tests pass with temporary banks and worksheets;
+  all 70 real questions pass structure and source-quote checks. The real export
+  contains 70 pending rows and nine priority items. Its format check passes and
+  `--require-complete` fails with 70 pending, as intended.
+- Local packet: `.review/ice-first-pass/`. Git ignores `.review/` so returned
+  worksheets and reviewer names stay out of source control. Workflow and commands:
+  `content/review/README.md`. Tests: `python -B -m unittest discover -s tests -v`.
+- **Decision for David:** choose the working CDAs or dental-assisting instructors
+  to approach, approve the outreach, and confirm whether to offer the lifetime
+  access described in the existing plan. No outreach or access grants occurred.
+  Human review remains open. The development app still serves draft questions;
+  a learner release needs reviewed-content selection and release approval.
+- Changes remain local and uncommitted. No push, deployment, remote database
+  mutation, credential, account, or access change occurred in this phase.
+
+The next app work after review is displaying saved progress and adding FSRS.
+Keep real-account linking, paywalls, and career features outside this phase.
 
 ## 2026-10-05: waitlist restored and moved to Toothly's database
 

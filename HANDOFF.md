@@ -1,4 +1,4 @@
-> status: active, waitlist healthy, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; lifetime-access offer confirmed, outreach drafted, nothing sent | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: David picks programs from `.review/reviewer-shortlist.md` (local, ignored) and approves sending `content/review/outreach-email.md`; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
+> status: active, waitlist healthy, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; lifetime-access offer confirmed, outreach drafted, nothing sent | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: David approves sending the 8 round-one drafts in Zoho (list in `.review/reviewer-shortlist.md`, local, ignored); follow up after 7 days with the template in `content/review/outreach-email.md`; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
 
 ## 2026-10-16: review tooling committed, reviewer outreach drafted
 
@@ -21,8 +21,11 @@
   each school publishes them. Maine has one (UMA, Bangor/Lewiston). Tier 1 is 8
   programs with a published email; UMA and CT State contacts spot-checked live.
   It has a status table for logging sends and replies.
-- **Still David's call:** which programs to email, and the go-ahead to send. No
-  outreach sent, no packets distributed, no access granted.
+- Round one picked (David delegated the choice): all 8 Tier 1 programs. Eight
+  personalized emails sit in Zoho Drafts (david@deadpixeldesign.com), subject
+  "70 infection control questions, every one cites its source". Not sent.
+- **Still David's call:** the go-ahead to send. No outreach sent, no packets
+  distributed, no access granted.
 - `b741753` restored `outreach-email.md` after a parallel-session collision; pushed
   to `origin/main` 2026-10-16.
 

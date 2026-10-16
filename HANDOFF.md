@@ -11,7 +11,7 @@
   look (people David knows, CODA program director inboxes in Maine/New England,
   r/DentalAssistant and Facebook groups), program email, and a 7-day follow-up.
   It names no one; the named shortlist is `.review/reviewer-shortlist.md`
-  (ignored). Two sessions drafted outreach in parallel; David kept this one and
+  (ignored). Two sessions drafted outreach in parallel; both were merged into this one and
   the duplicate `outreach.md` was removed.
 - **Decided by David:** free lifetime access is the only offer (no pay, no
   credit). Round one is email to CODA program directors in Maine and New England,
@@ -23,6 +23,8 @@
   It has a status table for logging sends and replies.
 - **Still David's call:** which programs to email, and the go-ahead to send. No
   outreach sent, no packets distributed, no access granted.
+- `b741753` (restores outreach-email.md) is committed locally, not pushed; until
+  it is, origin/main points README and HANDOFF at a missing file.
 
 ## 2026-10-05: ICE review preparation (committed 2026-10-16 in `f506b9f`)
 

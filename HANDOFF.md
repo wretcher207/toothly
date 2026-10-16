@@ -1,4 +1,4 @@
-> status: active, waitlist healthy, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; reviewer shortlist criteria and outreach drafted, nothing sent | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: David picks reviewers, confirms the lifetime-access offer, and approves outreach in `content/review/outreach.md`; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
+> status: active, waitlist healthy, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; lifetime-access offer confirmed, outreach drafted, nothing sent | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: David picks reviewers from `.review/reviewer-shortlist.md` (local, ignored) and approves sending `content/review/outreach-email.md`; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
 
 ## 2026-10-16: review tooling committed, reviewer outreach drafted
 
@@ -7,12 +7,14 @@
   workspace sweep's backup commit `f506b9f` and is on `origin/main`. Tree clean.
 - Re-verified today: 18 tests pass; `verify_questions.py` passes all 70 ICE
   questions (all `draft`).
-- Added `content/review/outreach.md`: reviewer criteria, where to look (people
-  David knows, CODA program director inboxes in Maine/New England, the
-  r/DentalAssistant and Facebook plan), and three drafts (community post, reply,
-  program-director email) written against the voice profile. It names no one.
-- **Still David's call:** which reviewers, whether to offer free lifetime access
-  and in-app credit (bracketed in the drafts), and which channels. No outreach
+- `content/review/outreach-email.md` is the outreach: reviewer criteria, where to
+  look (people David knows, CODA program director inboxes in Maine/New England,
+  r/DentalAssistant and Facebook groups), program email, and a 7-day follow-up.
+  It names no one; the named shortlist is `.review/reviewer-shortlist.md`
+  (ignored). Two sessions drafted outreach in parallel; David kept this one and
+  the duplicate `outreach.md` was removed.
+- **Decided by David:** free lifetime access is the offer.
+- **Still David's call:** which reviewers, and go-ahead to send. No outreach
   sent, no packets distributed, no access granted.
 
 ## 2026-10-05: ICE review preparation (committed 2026-10-16 in `f506b9f`)

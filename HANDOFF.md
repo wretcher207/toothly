@@ -1,4 +1,4 @@
-> status: active, waitlist healthy, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; lifetime-access offer confirmed, outreach drafted, nothing sent | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: David approves sending the 8 round-one drafts in Zoho (list in `.review/reviewer-shortlist.md`, local, ignored); follow up after 7 days with the template in `content/review/outreach-email.md`; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
+> status: active, waitlist healthy, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; lifetime-access offer confirmed, round-one reviewer emails sent to 8 programs 2026-10-16 | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: watch for replies to the 8 reviewer emails (list in `.review/reviewer-shortlist.md`, local, ignored); follow up 2026-10-23 with the template in `content/review/outreach-email.md`; send a fresh packet to each yes after checking their credential; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
 
 ## 2026-10-16: review tooling committed, reviewer outreach drafted
 
@@ -21,11 +21,13 @@
   each school publishes them. Maine has one (UMA, Bangor/Lewiston). Tier 1 is 8
   programs with a published email; UMA and CT State contacts spot-checked live.
   It has a status table for logging sends and replies.
-- Round one picked (David delegated the choice): all 8 Tier 1 programs. Eight
-  personalized emails sit in Zoho Drafts (david@deadpixeldesign.com), subject
-  "70 infection control questions, every one cites its source". Not sent.
-- **Still David's call:** the go-ahead to send. No outreach sent, no packets
-  distributed, no access granted.
+- Round one (David delegated the pick): all 8 Tier 1 programs. Sent 2026-10-16
+  from david@deadpixeldesign.com with David's go-ahead, subject "70 infection
+  control questions, every one cites its source"; all 8 confirmed in Zoho Sent.
+  Drafts moved to Trash. No packets distributed, no access granted yet.
+- Next: watch the Zoho inbox for replies. Follow up on 2026-10-23 with the
+  template in `content/review/outreach-email.md` to anyone who hasn't answered,
+  after David approves. Log replies in the shortlist's status table.
 - `b741753` restored `outreach-email.md` after a parallel-session collision; pushed
   to `origin/main` 2026-10-16.
 

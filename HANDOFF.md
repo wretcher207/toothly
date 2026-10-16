@@ -1,4 +1,4 @@
-> status: active, waitlist healthy, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; lifetime-access offer confirmed, outreach drafted, nothing sent | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: David picks reviewers from `.review/reviewer-shortlist.md` (local, ignored) and approves sending `content/review/outreach-email.md`; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
+> status: active, waitlist healthy, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; lifetime-access offer confirmed, outreach drafted, nothing sent | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: David picks programs from `.review/reviewer-shortlist.md` (local, ignored) and approves sending `content/review/outreach-email.md`; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
 
 ## 2026-10-16: review tooling committed, reviewer outreach drafted
 
@@ -13,9 +13,16 @@
   It names no one; the named shortlist is `.review/reviewer-shortlist.md`
   (ignored). Two sessions drafted outreach in parallel; David kept this one and
   the duplicate `outreach.md` was removed.
-- **Decided by David:** free lifetime access is the offer.
-- **Still David's call:** which reviewers, and go-ahead to send. No outreach
-  sent, no packets distributed, no access granted.
+- **Decided by David:** free lifetime access is the only offer (no pay, no
+  credit). Round one is email to CODA program directors in Maine and New England,
+  leading with the cited-source angle. Community posts and warm asks wait.
+- `.review/reviewer-shortlist.md` lists all 13 CODA-accredited dental assisting
+  programs in ME/NH/VT/MA/RI/CT from the CODA search, with director contacts as
+  each school publishes them. Maine has one (UMA, Bangor/Lewiston). Tier 1 is 8
+  programs with a published email; UMA and CT State contacts spot-checked live.
+  It has a status table for logging sends and replies.
+- **Still David's call:** which programs to email, and the go-ahead to send. No
+  outreach sent, no packets distributed, no access granted.
 
 ## 2026-10-05: ICE review preparation (committed 2026-10-16 in `f506b9f`)
 

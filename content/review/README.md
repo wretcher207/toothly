@@ -25,6 +25,7 @@ the September 14 handoff appear first; `ice-priorities.json` stores those notes.
 Keep generated packets and returned worksheets under `.review/`, which Git ignores.
 The worksheet starts with 70 pending rows. Use a separate copy for each reviewer.
 Distributing packets or recruiting reviewers requires David's scoped approval.
+Reviewer criteria and outreach drafts: `outreach.md`.
 
 ## Record feedback
 

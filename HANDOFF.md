@@ -1,6 +1,21 @@
-> status: active, waitlist healthy, local ICE review tools ready, 70 drafts await clinical review; study session saves implemented | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: David chooses reviewers and approves outreach; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
+> status: active, waitlist healthy, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; reviewer shortlist criteria and outreach drafted, nothing sent | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: David picks reviewers, confirms the lifetime-access offer, and approves outreach in `content/review/outreach.md`; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
 
-## 2026-10-05: ICE review preparation (local, uncommitted)
+## 2026-10-16: review tooling committed, reviewer outreach drafted
+
+- The 2026-10-05 review tooling (`scripts/ice_review.py`, the `.bat`, tests,
+  `content/review/`, verifier hardening, doc updates) landed on `main` in the
+  workspace sweep's backup commit `f506b9f` and is on `origin/main`. Tree clean.
+- Re-verified today: 18 tests pass; `verify_questions.py` passes all 70 ICE
+  questions (all `draft`).
+- Added `content/review/outreach.md`: reviewer criteria, where to look (people
+  David knows, CODA program director inboxes in Maine/New England, the
+  r/DentalAssistant and Facebook plan), and three drafts (community post, reply,
+  program-director email) written against the voice profile. It names no one.
+- **Still David's call:** which reviewers, whether to offer free lifetime access
+  and in-app credit (bracketed in the drafts), and which channels. No outreach
+  sent, no packets distributed, no access granted.
+
+## 2026-10-05: ICE review preparation (committed 2026-10-16 in `f506b9f`)
 
 - Verified the completed restoration at `9023160` (following `a75e001`).
   `python scripts/check_waitlist.py` passed against the live landing and database.
@@ -37,7 +52,7 @@
   access described in the existing plan. No outreach or access grants occurred.
   Human review remains open. The development app still serves draft questions;
   a learner release needs reviewed-content selection and release approval.
-- Changes remain local and uncommitted. No push, deployment, remote database
+- Committed and pushed on 2026-10-16 in `f506b9f`. No deployment, remote database
   mutation, credential, account, or access change occurred in this phase.
 
 The next app work after review is displaying saved progress and adding FSRS.

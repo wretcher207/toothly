@@ -1,4 +1,18 @@
-> status: active, waitlist healthy, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; lifetime-access offer confirmed, round-one reviewer emails sent to 8 programs 2026-10-16 | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: watch for replies to the 8 reviewer emails (list in `.review/reviewer-shortlist.md`, local, ignored); follow up 2026-10-23 with the template in `content/review/outreach-email.md`; send a fresh packet to each yes after checking their credential; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
+> status: active, **waitlist DOWN since 2026-10-13 (Supabase project paused; restore awaiting David's OK)**, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; lifetime-access offer confirmed, round-one reviewer emails sent to 8 programs 2026-10-16 | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: restore the paused Supabase project and re-run Waitlist health; decide how to stop it pausing again; then watch for replies to the 8 reviewer emails (list in `.review/reviewer-shortlist.md`, local, ignored); follow up 2026-10-23 with the template in `content/review/outreach-email.md`; send a fresh packet to each yes after checking their credential; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
+
+## 2026-10-18: waitlist database paused again
+
+- GitHub's Waitlist health check has failed every day since 2026-10-13
+  (last pass 2026-10-12). The landing page still returns 200, but
+  `ltamlswdkckutchlffkb.supabase.co` no longer resolves in DNS, so signups fail.
+- The Supabase dashboard (David's Brave) shows: Project "toothly" is paused.
+  Same free-tier inactivity pause as before the 2026-10-05 restore. The daily
+  read-only `toothly_health` call evidently does not count as activity.
+- Not restored yet: waiting on David's go-ahead. After restoring, run
+  `python scripts/check_waitlist.py` and re-run the workflow
+  (`gh workflow run "Waitlist health"`).
+- Open decision: how to keep it from pausing again (Supabase Pro, or some
+  keep-alive that Supabase counts as activity; the latter is untested).
 
 ## 2026-10-16: review tooling committed, reviewer outreach drafted
 

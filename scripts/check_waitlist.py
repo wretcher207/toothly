@@ -1,4 +1,7 @@
-"""Check the public landing page and database without creating a signup."""
+"""Check the public landing page and database without creating a signup.
+
+Also touches the one-row keep-alive table so the free Supabase project stays awake.
+"""
 import json
 import re
 import urllib.request
@@ -16,6 +19,14 @@ def check():
     )
     with urllib.request.urlopen(request, timeout=30) as response:
         assert json.load(response) is True, "Database health check failed"
+    # A small write so Supabase does not pause the free project as idle.
+    request = urllib.request.Request(
+        url + "/rest/v1/rpc/toothly_keepalive",
+        data=b"{}",
+        headers={"apikey": key, "Content-Type": "application/json"},
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        assert json.load(response) is True, "Database keep-alive failed"
     print("Toothly landing page and database are reachable.")
 
 

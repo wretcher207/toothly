@@ -1,4 +1,4 @@
-> status: active, **waitlist was down 2026-10-13 to 10-18 (Supabase paused it; David restored it 10-18); keep-alive written, awaiting OK to apply**, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; lifetime-access offer confirmed, round-one reviewer emails sent to 8 programs 2026-10-16 | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: restore the paused Supabase project and re-run Waitlist health; decide how to stop it pausing again; then watch for replies to the 8 reviewer emails (list in `.review/reviewer-shortlist.md`, local, ignored); follow up 2026-10-23 with the template in `content/review/outreach-email.md`; send a fresh packet to each yes after checking their credential; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
+> status: active, **waitlist was down 2026-10-13 to 10-18 (Supabase paused it; David restored it 10-18); free keep-alive applied 10-18, watch for a pause by 10-26**, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; lifetime-access offer confirmed, round-one reviewer emails sent to 8 programs 2026-10-16 | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: confirm no Supabase pause by 2026-10-26; watch for replies to the 8 reviewer emails (list in `.review/reviewer-shortlist.md`, local, ignored); follow up 2026-10-23 with the template in `content/review/outreach-email.md`; send a fresh packet to each yes after checking their credential; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
 
 ## 2026-10-18: waitlist database paused again
 
@@ -10,10 +10,12 @@
   read-only `toothly_health` call evidently does not count as activity.
 - David restored the project himself on 2026-10-18 and picked the free
   keep-alive over Supabase Pro.
-- Written, not applied or committed yet:
+- Applied 2026-10-18 with David's OK:
   `supabase/migrations/20261018170000_toothly_keepalive.sql` (one-row table plus
   `toothly_keepalive()`, which updates it) and a call to it in
   `scripts/check_waitlist.py`, so the daily workflow writes instead of only reading.
+  Verified: the local check passes, `pinged_at` updates, migration history has
+  the version, and the public key gets 401 on reading or editing the table.
 - The saved Supabase PAT the 2026-10-05 entry mentions was not in Windows
   Credential Manager or env vars, so the SQL goes in through the dashboard SQL
   editor in David's Brave, with an insert into

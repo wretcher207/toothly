@@ -1,4 +1,4 @@
-> status: active, **waitlist DOWN since 2026-10-13 (Supabase project paused; restore awaiting David's OK)**, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; lifetime-access offer confirmed, round-one reviewer emails sent to 8 programs 2026-10-16 | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: restore the paused Supabase project and re-run Waitlist health; decide how to stop it pausing again; then watch for replies to the 8 reviewer emails (list in `.review/reviewer-shortlist.md`, local, ignored); follow up 2026-10-23 with the template in `content/review/outreach-email.md`; send a fresh packet to each yes after checking their credential; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
+> status: active, **waitlist was down 2026-10-13 to 10-18 (Supabase paused it; David restored it 10-18); keep-alive written, awaiting OK to apply**, ICE review tools committed (`f506b9f`), 70 drafts await clinical review; lifetime-access offer confirmed, round-one reviewer emails sent to 8 programs 2026-10-16 | one-liner: DANB CDA exam prep app; waitlist at toothly.deadpixeldesign.com | next: restore the paused Supabase project and re-run Waitlist health; decide how to stop it pausing again; then watch for replies to the 8 reviewer emails (list in `.review/reviewer-shortlist.md`, local, ignored); follow up 2026-10-23 with the template in `content/review/outreach-email.md`; send a fresh packet to each yes after checking their credential; resolve their feedback before starter-deck release. Progress display and FSRS remain later app work.
 
 ## 2026-10-18: waitlist database paused again
 
@@ -8,11 +8,21 @@
 - The Supabase dashboard (David's Brave) shows: Project "toothly" is paused.
   Same free-tier inactivity pause as before the 2026-10-05 restore. The daily
   read-only `toothly_health` call evidently does not count as activity.
-- Not restored yet: waiting on David's go-ahead. After restoring, run
-  `python scripts/check_waitlist.py` and re-run the workflow
-  (`gh workflow run "Waitlist health"`).
-- Open decision: how to keep it from pausing again (Supabase Pro, or some
-  keep-alive that Supabase counts as activity; the latter is untested).
+- David restored the project himself on 2026-10-18 and picked the free
+  keep-alive over Supabase Pro.
+- Written, not applied or committed yet:
+  `supabase/migrations/20261018170000_toothly_keepalive.sql` (one-row table plus
+  `toothly_keepalive()`, which updates it) and a call to it in
+  `scripts/check_waitlist.py`, so the daily workflow writes instead of only reading.
+- The saved Supabase PAT the 2026-10-05 entry mentions was not in Windows
+  Credential Manager or env vars, so the SQL goes in through the dashboard SQL
+  editor in David's Brave, with an insert into
+  `supabase_migrations.schema_migrations` to keep history aligned.
+- Order matters: apply the SQL, pass `check_waitlist.py` locally, then commit and
+  push the script. Pushing the script first turns the workflow red.
+- Untested hypothesis: that a daily write counts as activity when the read did
+  not. Check around 2026-10-26: no pause means it works. If it pauses again,
+  Supabase Pro is the remaining option.
 
 ## 2026-10-16: review tooling committed, reviewer outreach drafted
 
